@@ -1,0 +1,3237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>诺和诺德销售代表培训 H5 · 高保真原型</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════════
+     SVG Sprite · 统一 24×24 · stroke 2 · round
+     ════════════════════════════════════════════════════════════ -->
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- 通用导航 / 操作 -->
+  <symbol id="i-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+  <symbol id="i-trend-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></symbol>
+  <symbol id="i-replay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></symbol>
+  <symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol>
+  <symbol id="i-more-h" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></symbol>
+
+  <!-- 底部 Tab -->
+  <symbol id="i-tab-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+  <symbol id="i-tab-scenario" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+  <symbol id="i-tab-rank" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></symbol>
+  <symbol id="i-tab-mine" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+
+  <!-- 通讯 / 状态栏 -->
+  <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></symbol>
+  <symbol id="i-keyboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2" ry="2"/><line x1="6" y1="8" x2="6" y2="8"/><line x1="10" y1="8" x2="10" y2="8"/><line x1="14" y1="8" x2="14" y2="8"/><line x1="18" y1="8" x2="18" y2="8"/><line x1="6" y1="12" x2="6" y2="12"/><line x1="10" y1="12" x2="10" y2="12"/><line x1="14" y1="12" x2="14" y2="12"/><line x1="18" y1="12" x2="18" y2="12"/><line x1="7" y1="16" x2="17" y2="16"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+  <symbol id="i-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+
+  <!-- 媒体类型 -->
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></symbol>
+  <symbol id="i-file-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></symbol>
+  <symbol id="i-volume" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></symbol>
+
+  <!-- 功能图标 -->
+  <symbol id="i-bookmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-bookmark-fill" viewBox="0 0 24 24" fill="currentColor"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-thumbs-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
+  <symbol id="i-paperclip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+  <symbol id="i-question" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.5 9a2.5 2.5 0 0 1 4.86.5c0 1.5-2.5 2-2.5 3.5"/><circle cx="12" cy="17" r="0.6" fill="currentColor"/></symbol>
+  <symbol id="i-lightbulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21h6"/><path d="M10 21v-3"/><path d="M14 21v-3"/><path d="M12 3a6 6 0 0 1 4 10.5V17H8v-3.5A6 6 0 0 1 12 3z"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="currentColor"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></symbol>
+  <symbol id="i-medal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="15" r="6"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/><path d="M9 7l-2-5h10l-2 5"/></symbol>
+  <symbol id="i-coin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 7v10"/><path d="M9 9h4.5a2 2 0 0 1 0 4H9"/><path d="M9 13h4.5a2 2 0 0 1 0 4H9"/></symbol>
+  <symbol id="i-crown" viewBox="0 0 24 24" fill="currentColor"><path d="M2 7l4 10h12l4-10-5 4-5-7-5 7-5-4z"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+  <symbol id="i-history" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.74 9.74 0 0 0-7 3L3 8"/><polyline points="3 3 3 8 8 8"/><polyline points="12 7 12 12 15 15"/></symbol>
+  <symbol id="i-skip" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-lock-mini" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="i-stethoscope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2v8a5 5 0 0 0 10 0V2"/><path d="M3 2h4"/><path d="M13 2h4"/><circle cx="20" cy="14" r="2"/><path d="M10 15v3a4 4 0 0 0 8 0v-2"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+  <symbol id="i-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2z"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6L4 18a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-5-10V2"/><line x1="8" y1="2" x2="16" y2="2"/></symbol>
+  <symbol id="i-pill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5l10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7z"/><line x1="8.5" y1="8.5" x2="15.5" y2="15.5"/></symbol>
+  <symbol id="i-syringe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2l4 4"/><path d="M17 7l3-3"/><path d="M19 9l-8.5 8.5a2 2 0 0 1-2.83 0l-2.17-2.17a2 2 0 0 1 0-2.83L14 4l5 5z"/><path d="M9 11l4 4"/><path d="M5 15l-3 3 3 3 3-3"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
+
+  <!-- 3D 卡通医生头像 · viewBox 0 0 100 100 -->
+  <!-- 王伟主任医师 · 中年男 · 黑框眼镜 · 白大褂 -->
+  <symbol id="p-doc-wang" viewBox="0 0 100 100">
+    <defs>
+      <radialGradient id="wBg" cx="35%" cy="30%" r="80%"><stop offset="0%" stop-color="#F4ECFF"/><stop offset="60%" stop-color="#D9C4F5"/><stop offset="100%" stop-color="#A887E0"/></radialGradient>
+      <linearGradient id="wCoat" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#D9E2F3"/></linearGradient>
+      <radialGradient id="wSkin" cx="40%" cy="35%" r="80%"><stop offset="0%" stop-color="#FFE9D2"/><stop offset="60%" stop-color="#F8C9A2"/><stop offset="100%" stop-color="#D89F73"/></radialGradient>
+      <linearGradient id="wHair" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3B3438"/><stop offset="100%" stop-color="#1F1B1F"/></linearGradient>
+    </defs>
+    <circle cx="50" cy="50" r="50" fill="url(#wBg)"/>
+    <!-- 衣领 + 白大褂 -->
+    <path d="M14 100 C16 80 30 70 50 70 C70 70 84 80 86 100 Z" fill="url(#wCoat)"/>
+    <!-- V 领 -->
+    <path d="M42 70 L50 88 L58 70 L54 70 L50 80 L46 70 Z" fill="#5C7BD8"/>
+    <path d="M50 80 L46 100 L54 100 Z" fill="#3F5BB8"/>
+    <!-- 听诊器(挂脖子) -->
+    <path d="M40 72 C38 82 44 88 50 92" fill="none" stroke="#2E3A52" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M60 72 C62 82 56 88 50 92" fill="none" stroke="#2E3A52" stroke-width="1.6" stroke-linecap="round"/>
+    <circle cx="50" cy="93" r="3" fill="#2E3A52"/>
+    <circle cx="50" cy="93" r="1.4" fill="#5C6B8A"/>
+    <!-- 脖子 -->
+    <path d="M44 60 L44 70 L56 70 L56 60 Z" fill="url(#wSkin)"/>
+    <path d="M44 66 Q50 70 56 66 L56 70 L44 70 Z" fill="rgba(0,0,0,0.10)"/>
+    <!-- 头(梨形) -->
+    <path d="M30 42 C30 26 38 18 50 18 C62 18 70 26 70 42 C70 56 62 64 50 64 C38 64 30 56 30 42 Z" fill="url(#wSkin)"/>
+    <!-- 头发(覆盖式短发) -->
+    <path d="M28 40 C28 22 38 14 50 14 C62 14 72 22 72 40 C72 38 70 32 64 30 C62 26 56 24 50 24 C44 24 38 26 36 30 C30 32 28 38 28 40 Z" fill="url(#wHair)"/>
+    <!-- 鬓角 -->
+    <path d="M30 40 Q30 48 33 52 L36 44 Z" fill="url(#wHair)"/>
+    <path d="M70 40 Q70 48 67 52 L64 44 Z" fill="url(#wHair)"/>
+    <!-- 耳朵 -->
+    <ellipse cx="30.5" cy="44" rx="2.6" ry="3.6" fill="url(#wSkin)"/>
+    <ellipse cx="69.5" cy="44" rx="2.6" ry="3.6" fill="url(#wSkin)"/>
+    <ellipse cx="30.5" cy="44.5" rx="0.9" ry="1.6" fill="rgba(0,0,0,0.18)"/>
+    <ellipse cx="69.5" cy="44.5" rx="0.9" ry="1.6" fill="rgba(0,0,0,0.18)"/>
+    <!-- 眉毛 -->
+    <path d="M37 40 Q42 37.5 47 40" stroke="#1F1B1F" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M53 40 Q58 37.5 63 40" stroke="#1F1B1F" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <!-- 黑框眼镜 -->
+    <rect x="36.5" y="42" width="11" height="9" rx="2" fill="rgba(255,255,255,0.55)" stroke="#1F1B1F" stroke-width="1.6"/>
+    <rect x="52.5" y="42" width="11" height="9" rx="2" fill="rgba(255,255,255,0.55)" stroke="#1F1B1F" stroke-width="1.6"/>
+    <line x1="47.5" y1="46" x2="52.5" y2="46" stroke="#1F1B1F" stroke-width="1.6"/>
+    <!-- 眼睛(透过镜片) -->
+    <circle cx="42" cy="46.5" r="1.5" fill="#1F1B1F"/>
+    <circle cx="58" cy="46.5" r="1.5" fill="#1F1B1F"/>
+    <circle cx="42.6" cy="46" r="0.5" fill="#fff"/>
+    <circle cx="58.6" cy="46" r="0.5" fill="#fff"/>
+    <!-- 鼻子(轻线条) -->
+    <path d="M50 50 Q49 54 50.5 56" stroke="#C28A66" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <!-- 嘴(温和微笑) -->
+    <path d="M45 59 Q50 62 55 59" stroke="#7A3A2A" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <!-- 高光 -->
+    <ellipse cx="40" cy="32" rx="6" ry="3" fill="rgba(255,255,255,0.30)"/>
+    <ellipse cx="40" cy="40" rx="2.5" ry="1.5" fill="rgba(255,255,255,0.40)"/>
+  </symbol>
+
+  <!-- 李雪 主治医师 · 年轻女 · 马尾 · 微笑 · 白大褂 -->
+  <symbol id="p-doc-li" viewBox="0 0 100 100">
+    <defs>
+      <radialGradient id="liBg" cx="35%" cy="30%" r="80%"><stop offset="0%" stop-color="#FFEFE6"/><stop offset="60%" stop-color="#FFCBB1"/><stop offset="100%" stop-color="#F09674"/></radialGradient>
+      <linearGradient id="liCoat" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#FCE3D2"/></linearGradient>
+      <radialGradient id="liSkin" cx="40%" cy="35%" r="80%"><stop offset="0%" stop-color="#FFEDD8"/><stop offset="60%" stop-color="#FBCEA8"/><stop offset="100%" stop-color="#E0A076"/></radialGradient>
+      <linearGradient id="liHair" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4A2D1E"/><stop offset="100%" stop-color="#2A170E"/></linearGradient>
+    </defs>
+    <circle cx="50" cy="50" r="50" fill="url(#liBg)"/>
+    <!-- 后部头发(高马尾)-->
+    <ellipse cx="74" cy="36" rx="6" ry="9" fill="url(#liHair)"/>
+    <!-- 白大褂 -->
+    <path d="M14 100 C16 80 30 70 50 70 C70 70 84 80 86 100 Z" fill="url(#liCoat)"/>
+    <!-- V 领(粉色衬衣) -->
+    <path d="M42 70 L50 86 L58 70 L54 70 L50 78 L46 70 Z" fill="#FF8FA3"/>
+    <path d="M50 78 L47 100 L53 100 Z" fill="#E0708A"/>
+    <!-- 脖子 -->
+    <path d="M44 60 L44 70 L56 70 L56 60 Z" fill="url(#liSkin)"/>
+    <path d="M44 66 Q50 70 56 66 L56 70 L44 70 Z" fill="rgba(0,0,0,0.10)"/>
+    <!-- 头 -->
+    <path d="M30 42 C30 26 38 18 50 18 C62 18 70 26 70 42 C70 56 62 64 50 64 C38 64 30 56 30 42 Z" fill="url(#liSkin)"/>
+    <!-- 头发(中分顺到耳后)-->
+    <path d="M28 38 C28 20 40 12 50 12 C60 12 72 20 72 38 C72 30 64 26 56 28 C54 24 52 22 50 22 C48 22 46 24 44 28 C36 26 28 30 28 38 Z" fill="url(#liHair)"/>
+    <!-- 刘海(自然侧分)-->
+    <path d="M34 30 Q42 22 50 26 Q48 36 38 38 Z" fill="url(#liHair)"/>
+    <path d="M58 28 Q64 30 66 38 Q60 36 56 30 Z" fill="url(#liHair)"/>
+    <!-- 耳朵 -->
+    <ellipse cx="30.5" cy="44" rx="2.4" ry="3.4" fill="url(#liSkin)"/>
+    <ellipse cx="69.5" cy="44" rx="2.4" ry="3.4" fill="url(#liSkin)"/>
+    <!-- 眉毛(细弯眉)-->
+    <path d="M38 40 Q42 38 46 40" stroke="#3A2415" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <path d="M54 40 Q58 38 62 40" stroke="#3A2415" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <!-- 大眼睛 + 高光 -->
+    <ellipse cx="42" cy="46" rx="2.6" ry="3.2" fill="#1F1410"/>
+    <ellipse cx="58" cy="46" rx="2.6" ry="3.2" fill="#1F1410"/>
+    <circle cx="43" cy="45" r="1" fill="#fff"/>
+    <circle cx="59" cy="45" r="1" fill="#fff"/>
+    <circle cx="41.4" cy="47.4" r="0.5" fill="#fff" opacity="0.7"/>
+    <circle cx="57.4" cy="47.4" r="0.5" fill="#fff" opacity="0.7"/>
+    <!-- 腮红 -->
+    <ellipse cx="38" cy="53" rx="3.4" ry="1.8" fill="#FFA0A0" opacity="0.6"/>
+    <ellipse cx="62" cy="53" rx="3.4" ry="1.8" fill="#FFA0A0" opacity="0.6"/>
+    <!-- 鼻 -->
+    <path d="M50 50 Q49 53 50 55" stroke="#D49A77" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <!-- 嘴(开心笑) -->
+    <path d="M44 58 Q50 63 56 58 Q52 60 48 60 Z" fill="#C84A4A"/>
+    <path d="M48 60 Q50 61 52 60" stroke="#fff" stroke-width="0.8" fill="none" opacity="0.6"/>
+    <!-- 高光 -->
+    <ellipse cx="40" cy="32" rx="6" ry="3" fill="rgba(255,255,255,0.35)"/>
+  </symbol>
+
+  <!-- 张强 KOL 教授 · 年长男 · 银发 · 方框眼镜 · 领带 -->
+  <symbol id="p-doc-zhang" viewBox="0 0 100 100">
+    <defs>
+      <radialGradient id="zBg" cx="35%" cy="30%" r="80%"><stop offset="0%" stop-color="#FFF6DF"/><stop offset="60%" stop-color="#FFD786"/><stop offset="100%" stop-color="#D8A445"/></radialGradient>
+      <linearGradient id="zCoat" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#E0E7F2"/></linearGradient>
+      <radialGradient id="zSkin" cx="40%" cy="35%" r="80%"><stop offset="0%" stop-color="#FFE5C8"/><stop offset="60%" stop-color="#F2C094"/><stop offset="100%" stop-color="#C68A60"/></radialGradient>
+      <linearGradient id="zHair" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E2E5EA"/><stop offset="100%" stop-color="#A8ADB6"/></linearGradient>
+    </defs>
+    <circle cx="50" cy="50" r="50" fill="url(#zBg)"/>
+    <!-- 西装 -->
+    <path d="M14 100 C16 80 30 70 50 70 C70 70 84 80 86 100 Z" fill="#2E3A52"/>
+    <!-- 衬衫 V -->
+    <path d="M42 70 L50 92 L58 70 L54 70 L50 86 L46 70 Z" fill="#FFFFFF"/>
+    <!-- 领带 -->
+    <path d="M48 70 L46 76 L50 82 L54 76 L52 70 Z" fill="#5C7BD8"/>
+    <path d="M50 82 L46 100 L54 100 Z" fill="#3F5BB8"/>
+    <!-- 领翼 -->
+    <path d="M40 70 L50 78 L42 80 Z" fill="url(#zCoat)" opacity="0.85"/>
+    <path d="M60 70 L50 78 L58 80 Z" fill="url(#zCoat)" opacity="0.85"/>
+    <!-- 脖子 -->
+    <path d="M44 60 L44 70 L56 70 L56 60 Z" fill="url(#zSkin)"/>
+    <path d="M44 66 Q50 70 56 66 L56 70 L44 70 Z" fill="rgba(0,0,0,0.10)"/>
+    <!-- 头 -->
+    <path d="M30 42 C30 26 38 18 50 18 C62 18 70 26 70 42 C70 56 62 64 50 64 C38 64 30 56 30 42 Z" fill="url(#zSkin)"/>
+    <!-- 银发(略后梳)-->
+    <path d="M28 40 C28 22 38 14 50 14 C62 14 72 22 72 40 C70 36 64 32 58 32 C56 28 53 26 50 26 C47 26 44 28 42 32 C36 32 30 36 28 40 Z" fill="url(#zHair)"/>
+    <!-- 鬓角(银) -->
+    <path d="M30 40 Q31 50 33 54 L36 46 Z" fill="url(#zHair)"/>
+    <path d="M70 40 Q69 50 67 54 L64 46 Z" fill="url(#zHair)"/>
+    <!-- 耳朵 -->
+    <ellipse cx="30.5" cy="44" rx="2.6" ry="3.6" fill="url(#zSkin)"/>
+    <ellipse cx="69.5" cy="44" rx="2.6" ry="3.6" fill="url(#zSkin)"/>
+    <!-- 眉毛(灰) -->
+    <path d="M37 40 Q42 38 47 40" stroke="#7A7E86" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path d="M53 40 Q58 38 63 40" stroke="#7A7E86" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <!-- 方框眼镜 -->
+    <rect x="36.5" y="42" width="11" height="9" rx="2" fill="rgba(255,255,255,0.55)" stroke="#37495E" stroke-width="1.6"/>
+    <rect x="52.5" y="42" width="11" height="9" rx="2" fill="rgba(255,255,255,0.55)" stroke="#37495E" stroke-width="1.6"/>
+    <line x1="47.5" y1="46" x2="52.5" y2="46" stroke="#37495E" stroke-width="1.6"/>
+    <!-- 眼睛 -->
+    <circle cx="42" cy="46.5" r="1.4" fill="#1F1B1F"/>
+    <circle cx="58" cy="46.5" r="1.4" fill="#1F1B1F"/>
+    <circle cx="42.6" cy="46" r="0.5" fill="#fff"/>
+    <circle cx="58.6" cy="46" r="0.5" fill="#fff"/>
+    <!-- 鼻 -->
+    <path d="M50 51 Q49 55 50 57" stroke="#B97E58" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <!-- 嘴(沉稳合嘴) -->
+    <path d="M45 60 Q50 62 55 60" stroke="#7A3A2A" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <!-- 法令纹(轻) -->
+    <path d="M44 56 Q42 60 44 62" stroke="rgba(0,0,0,0.12)" stroke-width="1" fill="none"/>
+    <path d="M56 56 Q58 60 56 62" stroke="rgba(0,0,0,0.12)" stroke-width="1" fill="none"/>
+    <!-- 高光 -->
+    <ellipse cx="40" cy="32" rx="6" ry="3" fill="rgba(255,255,255,0.28)"/>
+  </symbol>
+
+  <!-- v2 新增图标 -->
+  <symbol id="i-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.09 5.91L20 10l-5.91 2.09L12 18l-2.09-5.91L4 10l5.91-2.09L12 2zM19 14l.96 2.54L22.5 17.5l-2.54.96L19 21l-.96-2.54L15.5 17.5l2.54-.96L19 14zM5 14l.66 1.84L7.5 16.5l-1.84.66L5 19l-.66-1.84L2.5 16.5l1.84-.66L5 14z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></symbol>
+  <symbol id="i-thumbs-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+  <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
+  <symbol id="i-user-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/><path d="M9 14v3a3 3 0 0 0 6 0v-3"/><circle cx="18" cy="18" r="2"/></symbol>
+  <symbol id="i-mic-fill" viewBox="0 0 24 24" fill="currentColor"><path d="M12 14a3 3 0 0 0 3-3V4a3 3 0 0 0-6 0v7a3 3 0 0 0 3 3z"/><path d="M19 11a1 1 0 0 0-2 0 5 5 0 0 1-10 0 1 1 0 0 0-2 0 7 7 0 0 0 6 6.92V20H8a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2h-3v-2.08A7 7 0 0 0 19 11z"/></symbol>
+  <symbol id="i-trend-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></symbol>
+  <symbol id="i-tab-ask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><path d="M9.5 9a2.5 2.5 0 0 1 4.86.5c0 1.5-2.5 2-2.5 3.5"/><circle cx="12" cy="17" r="0.6" fill="currentColor"/></symbol>
+  <symbol id="i-tab-exam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></symbol>
+  <symbol id="i-tab-home2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+  <symbol id="i-fire" viewBox="0 0 24 24" fill="currentColor"><path d="M8 14s-1.5-.5-1.5-3.5C6.5 8 9 6 9 6s.5 2 2 2c2 0 2.5-3 2.5-3s4.5 3 4.5 8c0 4-3 6-6 6s-6-2-6-6c0-1.5 1-2 1-2s0 1 1 1z"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+  <symbol id="i-magic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8L19 13"/><path d="M15 9h0"/><path d="M17.8 6.2L19 5"/><path d="M3 21l9-9"/><path d="M12.2 6.2L11 5"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+  <symbol id="i-error" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></symbol>
+  <symbol id="i-check-c" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></symbol>
+  <symbol id="i-radar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.07 4.93A10 10 0 0 0 6.99 3.34"/><path d="M4 6h.01"/><path d="M2.29 9.62A10 10 0 1 0 21.31 8.35"/><path d="M16.24 7.76A6 6 0 1 0 18.92 11.4"/><path d="M22 2L12 12.01"/></symbol>
+</svg>
+
+<header class="canvas-header">
+  <h1>诺和诺德销售代表培训平台 · v2 高保真原型</h1>
+  <p>5 Tab · AI 问答 · 异议演练（双层评分）· 病例学习 · 考试中心 · 个人能力雷达 ｜ 示例：诺和泰</p>
+</header>
+
+<main class="canvas">
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 1 · 首页 v2
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-home-v2">
+    <div class="statusbar on-dark">
+      <span>9:41</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:84%;background:#fff"></i></span>
+      </div>
+    </div>
+
+    <div class="home-v2-hero">
+      <div class="app-header on-dark" style="padding:0 0 4px">
+        <div>
+          <div class="row" style="gap:8px">
+            <div class="avatar s-32 bg-coral" style="border:2px solid rgba(255,255,255,0.32)">陈</div>
+            <div class="greet">Hi, <b>陈晓雨</b> · 内分泌区域代表</div>
+          </div>
+        </div>
+        <div class="row gap-4">
+          <button class="icon-btn glass" style="position:relative"><svg width="18" height="18"><use href="#i-search"/></svg></button>
+          <button class="icon-btn glass" style="position:relative">
+            <svg width="18" height="18"><use href="#i-bell"/></svg>
+            <span class="dot-num" style="top:2px;right:2px">3</span>
+          </button>
+        </div>
+      </div>
+
+      <h2 class="h-title">今天多学一点<br><em>拜访就多一份从容</em></h2>
+
+      <!-- 学习状态卡 -->
+      <div class="learn-state learn-state-2col">
+        <div class="ls-item">
+          <div class="num">7<span class="u">天</span></div>
+          <div class="lbl">连续学习</div>
+          <div class="mini-bar"><i style="width:72%"></i></div>
+        </div>
+        <div class="col-sep"></div>
+        <div class="ls-item">
+          <div class="num">68<span class="u">/100</span></div>
+          <div class="lbl">考试进度</div>
+          <div class="mini-bar"><i style="width:68%"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-v2-body">
+      <!-- 知识学习三入口 -->
+      <div class="section-title">
+        <h3>知识学习</h3>
+        <span class="more">全部分类 <svg width="10" height="10" style="vertical-align:middle"><use href="#i-right"/></svg></span>
+      </div>
+      <div class="learn-entries">
+        <div class="learn-entry qa">
+          <span class="deco d1"></span><span class="deco d2"></span>
+          <div>
+            <div class="t">产品 QA</div>
+            <div class="d">标准问答 · 一问一答</div>
+            <div class="badge-num">142 题</div>
+          </div>
+          <div class="ic"><svg><use href="#i-question"/></svg></div>
+        </div>
+        <div class="learn-entry objection">
+          <span class="deco d1"></span><span class="deco d2"></span>
+          <div>
+            <div class="t">异议演练</div>
+            <div class="d">AI 医生 · 多轮对话</div>
+            <div class="badge-num">18 场景</div>
+          </div>
+          <div class="ic"><svg><use href="#i-stethoscope"/></svg></div>
+        </div>
+        <div class="learn-entry case">
+          <span class="deco d1"></span><span class="deco d2"></span>
+          <div>
+            <div class="t">病例实景学习</div>
+            <div class="d">AI 医生导师 · 病例陪练 · 双向问答</div>
+          </div>
+          <div class="ic"><svg><use href="#i-book"/></svg></div>
+        </div>
+      </div>
+
+      <!-- 推荐学习（产品 QA）-->
+      <div class="section-title" style="margin-top:6px">
+        <h3>推荐学习</h3>
+        <span class="more">更多 <svg width="10" height="10" style="vertical-align:middle"><use href="#i-right"/></svg></span>
+      </div>
+
+      <div class="qa-rec-card">
+        <div class="qa-q">
+          <div class="qmark">Q</div>
+          <div class="qt">医生认为诺和泰每周一次注射比口服更麻烦，依从性反而下降，如何回应？</div>
+        </div>
+        <div class="qa-tags">
+          <span class="chip coral">用药方案</span>
+          <span class="chip gray">依从性</span>
+        </div>
+        <div class="qa-foot">
+          <div class="meta">
+            <span><svg width="11" height="11"><use href="#i-eye"/></svg> 1.2k</span>
+            <span><svg width="11" height="11"><use href="#i-bookmark"/></svg> 收藏</span>
+          </div>
+          <span class="reveal">显示答案 <svg width="11" height="11"><use href="#i-right"/></svg></span>
+        </div>
+      </div>
+
+      <div class="qa-rec-card">
+        <div class="qa-q">
+          <div class="qmark">Q</div>
+          <div class="qt">SUSTAIN-6 研究中诺和泰的 MACE 风险降低数据是多少？心血管获益的机制是什么？</div>
+        </div>
+        <div class="qa-tags">
+          <span class="chip coral">疗效</span>
+          <span class="chip gray">心血管获益</span>
+        </div>
+        <div class="qa-foot">
+          <div class="meta">
+            <span><svg width="11" height="11"><use href="#i-eye"/></svg> 968</span>
+            <span><svg width="11" height="11"><use href="#i-bookmark"/></svg> 收藏</span>
+          </div>
+          <span class="reveal">显示答案 <svg width="11" height="11"><use href="#i-right"/></svg></span>
+        </div>
+      </div>
+
+      <div class="qa-rec-card">
+        <div class="qa-q">
+          <div class="qmark">Q</div>
+          <div class="qt">患者用药 4 周仍有恶心、轻度呕吐，如何分阶段缓解 GI 不良反应？</div>
+        </div>
+        <div class="qa-tags">
+          <span class="chip coral">安全性</span>
+          <span class="chip gray">GI 不良反应</span>
+        </div>
+        <div class="qa-foot">
+          <div class="meta">
+            <span><svg width="11" height="11"><use href="#i-eye"/></svg> 752</span>
+            <span><svg width="11" height="11"><use href="#i-bookmark"/></svg> 收藏</span>
+          </div>
+          <span class="reveal">显示答案 <svg width="11" height="11"><use href="#i-right"/></svg></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 Tab 底部导航 -->
+    <nav class="tabbar v5">
+      <div class="tab active">
+        <svg class="ic"><use href="#i-tab-home2"/></svg>
+        <span>首页</span>
+      </div>
+      <div class="tab">
+        <svg class="ic"><use href="#i-tab-ask"/></svg>
+        <span>AI 问答</span>
+      </div>
+      <div class="tab">
+        <svg class="ic"><use href="#i-tab-exam"/></svg>
+        <span>考试中心</span>
+      </div>
+      <div class="tab">
+        <svg class="ic"><use href="#i-tab-rank"/></svg>
+        <span>排行榜</span>
+      </div>
+      <div class="tab">
+        <svg class="ic"><use href="#i-tab-mine"/></svg>
+        <span>我的</span>
+      </div>
+    </nav>
+  </section>
+  <span class="screen-label">屏 1 · 首页（5 Tab · 知识学习三入口 · 推荐 QA）</span>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 2 · AI 问答首页（默认态）
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-ai-home">
+    <div class="statusbar">
+      <span>9:42</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:84%;background:currentColor"></i></span>
+      </div>
+    </div>
+
+    <div class="app-header" style="padding-top:4px">
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-back"/></svg></button>
+      <div class="title">AI 问答</div>
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-history"/></svg></button>
+    </div>
+
+    <div class="scroll">
+      <div class="ai-home-hero">
+        <div class="ai-greet">
+          <div class="av-ai"><svg><use href="#i-sparkle"/></svg></div>
+          <div class="g-text">
+            Hi，我是您的 <b>AI 医学助理</b>。可以问我<b>产品问题</b>、<b>异议处理建议</b>，也可以查询<b>医生信息</b>。
+          </div>
+        </div>
+      </div>
+
+      <div class="ai-section-title">
+        <svg><use href="#i-target"/></svg>
+        您想了解什么？
+        <span class="lbl-sub">点击直接开始</span>
+      </div>
+      <div class="ai-cat-grid">
+        <div class="ai-cat-card">
+          <div class="ic c1"><svg><use href="#i-pill"/></svg></div>
+          <div class="info">
+            <div class="t">产品相关 <span class="chip">最常用</span></div>
+            <div class="ex">"诺和泰的低血糖风险有多大？"<br>"SUSTAIN-6 心血管获益数据？"</div>
+          </div>
+          <div class="arrow"><svg><use href="#i-right"/></svg></div>
+        </div>
+        <div class="ai-cat-card">
+          <div class="ic c2"><svg><use href="#i-message"/></svg></div>
+          <div class="info">
+            <div class="t">异议处理建议</div>
+            <div class="ex">"医生说价格太贵，怎么回应？"<br>"主任质疑 GI 不良反应？"</div>
+          </div>
+          <div class="arrow"><svg><use href="#i-right"/></svg></div>
+        </div>
+        <div class="ai-cat-card">
+          <div class="ic c3"><svg><use href="#i-user-md"/></svg></div>
+          <div class="info">
+            <div class="t">医生信息查询 <span class="chip purple">HCP360</span></div>
+            <div class="ex">"朝阳医院内分泌科王伟主任最近关注什么？"</div>
+          </div>
+          <div class="arrow"><svg><use href="#i-right"/></svg></div>
+        </div>
+      </div>
+
+      <div class="ai-section-title">
+        <svg><use href="#i-fire"/></svg>
+        热门问题
+        <span class="lbl-sub">本周</span>
+      </div>
+      <div class="hot-q-list">
+        <div class="hot-q-item">
+          <div class="num top">1</div>
+          <div class="q">诺和泰 vs 度拉糖肽，临床疗效与安全性差异？</div>
+        </div>
+        <div class="hot-q-item">
+          <div class="num top">2</div>
+          <div class="q">周制剂如何分阶段缓解胃肠道不良反应？</div>
+        </div>
+        <div class="hot-q-item">
+          <div class="num top">3</div>
+          <div class="q">心血管获益证据最强的 GLP-1 RA 是哪个临床？</div>
+        </div>
+        <div class="hot-q-item">
+          <div class="num">4</div>
+          <div class="q">合并 ASCVD 的 T2DM 患者，诺和泰的剂量调整路径？</div>
+        </div>
+        <div class="hot-q-item">
+          <div class="num">5</div>
+          <div class="q">诺和泰对体重的影响数据（中国 2 型糖尿病人群）？</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部输入栏 -->
+    <div class="ai-input-bar">
+      <button class="clip-btn"><svg><use href="#i-plus"/></svg></button>
+      <div class="ipt placeholder">想问点什么……</div>
+      <button class="voice-mini"><svg width="18" height="18"><use href="#i-mic"/></svg></button>
+      <button class="send-btn"><svg><use href="#i-send"/></svg></button>
+    </div>
+
+    <!-- 5 Tab -->
+    <nav class="tabbar v5">
+      <div class="tab"><svg class="ic"><use href="#i-tab-home2"/></svg><span>首页</span></div>
+      <div class="tab active"><svg class="ic"><use href="#i-tab-ask"/></svg><span>AI 问答</span></div>
+      <div class="tab"><svg class="ic"><use href="#i-tab-exam"/></svg><span>考试中心</span></div>
+      <div class="tab"><svg class="ic"><use href="#i-tab-rank"/></svg><span>排行榜</span></div>
+      <div class="tab"><svg class="ic"><use href="#i-tab-mine"/></svg><span>我的</span></div>
+    </nav>
+  </section>
+  <span class="screen-label">屏 2 · AI 问答首页（引导提示 · 三类入口 · 热门问题）</span>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 3 · AI 问答对话页（多轮 + 溯源标记 + 反馈）
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-ai-chat">
+    <div class="statusbar">
+      <span>9:43</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:82%;background:currentColor"></i></span>
+      </div>
+    </div>
+
+    <div class="ai-chat-header">
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-back"/></svg></button>
+      <div class="title-block">
+        <div class="t">AI 医学助理</div>
+        <div class="s"><span class="live-dot"></span>在线 · 已检索 3 个知识库</div>
+      </div>
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-plus"/></svg></button>
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-more-h"/></svg></button>
+    </div>
+
+    <div class="ai-chat-body">
+      <!-- 用户提问 -->
+      <div class="ai-msg me">
+        <div class="av"><svg><use href="#i-tab-mine"/></svg></div>
+        <div class="bubble">医生说诺和泰每周一次注射比口服更麻烦，依从性反而下降，怎么回应？</div>
+      </div>
+
+      <!-- AI 回答（带溯源标记 + 操作 + 相关问题） -->
+      <div class="ai-msg ai">
+        <div class="av"><svg><use href="#i-sparkle"/></svg></div>
+        <div>
+          <div class="bubble">
+            这其实是一个常见的<b>用药方案异议</b>，可以从三方面回应：
+            <ul>
+              <li><b>研究证据</b>：周制剂在 SUSTAIN 系列研究中，依从性显著高于日制剂<span class="src-cite">来源 1</span>。</li>
+              <li><b>真实世界数据</b>：中国 T2DM 患者周制剂 6 个月坚持率约 78%，明显优于每日口服（约 52%）<span class="src-cite">来源 2</span>。</li>
+              <li><b>患者教育</b>：固定日程提示（如"每周一晚饭后注射"）+ 自我注射演示可有效降低注射焦虑<span class="src-cite">来源 3</span>。</li>
+            </ul>
+            可以建议医生在选择困难型患者首诊后先尝试 2-4 周，多数患者会建立依从习惯。
+            <div class="ai-bubble-foot">
+              <span class="src-pill"><svg><use href="#i-link"/></svg> 3 条来源</span>
+              <div class="acts">
+                <span class="act"><svg><use href="#i-copy"/></svg></span>
+                <span class="act fav active"><svg><use href="#i-bookmark-fill"/></svg></span>
+                <span class="act active"><svg><use href="#i-thumbs-up"/></svg></span>
+                <span class="act"><svg><use href="#i-thumbs-down"/></svg></span>
+                <span class="act"><svg><use href="#i-refresh"/></svg></span>
+              </div>
+            </div>
+          </div>
+          <div class="rel-q-title">
+            <svg width="12" height="12"><use href="#i-sparkle"/></svg>
+            相关问题推荐
+          </div>
+          <div class="rel-q-row">
+            <span class="chip-q"><svg><use href="#i-plus"/></svg> 周制剂 vs 日制剂 GI 不良反应对比？</span>
+            <span class="chip-q"><svg><use href="#i-plus"/></svg> 注射部位与时间该如何选择？</span>
+            <span class="chip-q"><svg><use href="#i-plus"/></svg> 漏打一针该怎么补救？</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 用户追问 -->
+      <div class="ai-msg me">
+        <div class="av"><svg><use href="#i-tab-mine"/></svg></div>
+        <div class="bubble">朝阳医院内分泌王伟主任近期有哪些学术关注点？</div>
+      </div>
+
+      <div class="ai-msg ai">
+        <div class="av"><svg><use href="#i-sparkle"/></svg></div>
+        <div>
+          <div class="bubble">
+            根据 <b>HCP360 数据</b>，王伟主任近 90 天关注：
+            <ul>
+              <li><b>心血管获益</b>（最近 3 次会议演讲均涉及）<span class="src-cite">来源 1</span></li>
+              <li><b>合并 CKD 患者的降糖路径</b><span class="src-cite">来源 2</span></li>
+              <li>对周制剂依从性数据持中立偏正态度</li>
+            </ul>
+            建议拜访切入点：可携带 <b>SUSTAIN-6 心血管获益亚组分析</b>。
+            <div class="ai-bubble-foot">
+              <span class="src-pill"><svg><use href="#i-link"/></svg> 2 条来源</span>
+              <div class="acts">
+                <span class="act"><svg><use href="#i-copy"/></svg></span>
+                <span class="act"><svg><use href="#i-bookmark"/></svg></span>
+                <span class="act"><svg><use href="#i-thumbs-up"/></svg></span>
+                <span class="act"><svg><use href="#i-thumbs-down"/></svg></span>
+                <span class="act"><svg><use href="#i-refresh"/></svg></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-input-bar">
+      <button class="clip-btn"><svg><use href="#i-plus"/></svg></button>
+      <div class="ipt">SUSTAIN-6 亚组分析关键数据有哪些？</div>
+      <button class="voice-mini"><svg width="18" height="18"><use href="#i-mic"/></svg></button>
+      <button class="send-btn"><svg><use href="#i-send"/></svg></button>
+    </div>
+  </section>
+  <span class="screen-label">屏 3 · AI 问答对话（多轮 · 行内溯源 · 反馈 · 相关问题）</span>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 4 · AI 问答 · 溯源半层弹层
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-ai-chat">
+    <div class="statusbar">
+      <span>9:43</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:82%;background:currentColor"></i></span>
+      </div>
+    </div>
+
+    <div class="ai-chat-header">
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-back"/></svg></button>
+      <div class="title-block">
+        <div class="t">AI 医学助理</div>
+        <div class="s"><span class="live-dot"></span>在线 · 已检索 3 个知识库</div>
+      </div>
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-plus"/></svg></button>
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-more-h"/></svg></button>
+    </div>
+
+    <div class="ai-chat-body" style="opacity:0.45">
+      <div class="ai-msg ai">
+        <div class="av"><svg><use href="#i-sparkle"/></svg></div>
+        <div class="bubble">这其实是一个常见的用药方案异议，可以从三方面回应：研究证据、真实世界数据、患者教育……</div>
+      </div>
+    </div>
+
+    <!-- 溯源半层抽屉 -->
+    <div class="src-sheet-mask">
+      <div class="src-sheet">
+        <div class="handle"></div>
+        <div class="sheet-head">
+          <div class="t">内容溯源 <span class="cnt">3 条</span></div>
+          <button class="close"><svg width="14" height="14"><use href="#i-close"/></svg></button>
+        </div>
+        <div class="sheet-body">
+
+          <div class="src-entry">
+            <div class="src-head">
+              <div class="ic web"><svg><use href="#i-globe"/></svg></div>
+              <div class="info">
+                <div class="t">SUSTAIN 系列研究·依从性亚组分析</div>
+                <div class="s">
+                  <span class="libtag">私域内容</span>
+                  <span>诺和诺德 · 医学事务部</span>
+                  <span>2025-11</span>
+                </div>
+              </div>
+              <button class="open"><svg width="14" height="14"><use href="#i-arrow"/></svg></button>
+            </div>
+            <div class="src-snippet">
+              ……周制剂组 6 个月坚持率显著高于日制剂组（<span class="hl">78.2% vs 51.8%, p&lt;0.001</span>），主要驱动因素为<span class="hl">注射频次降低</span>带来的心理负担减轻。
+            </div>
+          </div>
+
+          <div class="src-entry">
+            <div class="src-head">
+              <div class="ic pdf"><svg><use href="#i-file-text"/></svg></div>
+              <div class="info">
+                <div class="t">中国 T2DM 周制剂真实世界研究.pdf</div>
+                <div class="s">
+                  <span class="libtag">产品话术库</span>
+                  <span>PDF · 24 页</span>
+                  <span>3.6 MB</span>
+                </div>
+              </div>
+              <button class="open"><svg width="14" height="14"><use href="#i-arrow"/></svg></button>
+            </div>
+            <div class="src-snippet">
+              真实世界研究中，中国 T2DM 患者 GLP-1 RA 周制剂 6 个月持续用药率为 <span class="hl">78%</span>，每日口服降糖药对应数据约 <span class="hl">52%</span>；差异主要发生在第 8-12 周。
+            </div>
+          </div>
+
+          <div class="src-entry">
+            <div class="src-head">
+              <div class="ic hcp"><svg><use href="#i-user-md"/></svg></div>
+              <div class="info">
+                <div class="t">王伟主任·拜访纪要 2025-12</div>
+                <div class="s">
+                  <span class="libtag" style="background:#EDE3FE;color:#6D3DC8">HCP360</span>
+                  <span>朝阳医院 · 内分泌科</span>
+                  <span>3 周前</span>
+                </div>
+              </div>
+              <button class="open"><svg width="14" height="14"><use href="#i-arrow"/></svg></button>
+            </div>
+            <div class="src-snippet">
+              王主任反馈：科室对周制剂依从性兴趣较高，<span class="hl">尤其在 60+ 的老年合并 ASCVD 人群</span>。建议下次拜访可携带依从性主题资料。
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <span class="screen-label">屏 4 · 溯源半层弹层（命中片段 · 知识库标签 · 跳转原文件）</span>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 5 · 产品 QA 列表
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-faq">
+    <div class="statusbar">
+      <span>10:30</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:60%;background:currentColor"></i></span>
+      </div>
+    </div>
+
+    <div class="app-header">
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-back"/></svg></button>
+      <div class="title">产品 QA</div>
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-bookmark"/></svg></button>
+    </div>
+
+    <div class="search-bar">
+      <svg width="16" height="16" style="color:var(--c-text-3)"><use href="#i-search"/></svg>
+      <input placeholder="搜索问题、关键词、产品……">
+      <svg width="16" height="16" style="color:var(--c-text-3)"><use href="#i-filter"/></svg>
+    </div>
+
+    <div class="filter-row">
+      <span class="pill active">全部</span>
+      <span class="pill">疗效</span>
+      <span class="pill">安全性</span>
+      <span class="pill">用药方案</span>
+      <span class="pill">价格</span>
+      <span class="pill">适用人群</span>
+      <span class="pill">联合用药</span>
+    </div>
+
+    <div class="scroll" style="padding-bottom:16px">
+      <div class="faq-card">
+        <div class="q-row">
+          <div class="qmark">Q</div>
+          <div class="q-text">医生认为诺和泰每周一次注射比口服更麻烦，依从性反而下降，如何回应？</div>
+        </div>
+        <div class="a-text">这其实是常见的用药方案异议。可从研究证据、真实世界数据、患者教育三方面回应。SUSTAIN 系列显示周制剂依从性显著高于日制剂……</div>
+        <div class="meta-row">
+          <div class="tag-row">
+            <span class="chip coral">用药方案</span>
+            <span class="chip gray">依从性</span>
+          </div>
+          <div class="acts">
+            <span><svg width="11" height="11"><use href="#i-eye"/></svg> 1.2k</span>
+            <span><svg width="11" height="11"><use href="#i-bookmark-fill"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="q-row">
+          <div class="qmark">Q</div>
+          <div class="q-text">SUSTAIN-6 研究中诺和泰的 MACE 风险降低数据是多少？心血管获益机制是什么？</div>
+        </div>
+        <div class="a-text">SUSTAIN-6 主要终点 3 点 MACE 风险降低 26%（HR 0.74，p=0.02）。心血管获益机制涉及……</div>
+        <div class="meta-row">
+          <div class="tag-row">
+            <span class="chip coral">疗效</span>
+            <span class="chip gray">心血管获益</span>
+          </div>
+          <div class="acts">
+            <span><svg width="11" height="11"><use href="#i-eye"/></svg> 968</span>
+            <span><svg width="11" height="11"><use href="#i-bookmark"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="q-row">
+          <div class="qmark">Q</div>
+          <div class="q-text">患者用药 4 周仍有恶心、轻度呕吐，如何分阶段缓解 GI 不良反应？</div>
+        </div>
+        <div class="a-text">建议起始 0.25mg 维持 4 周，逐步递增；饮食小份多次、避免高脂；必要时止吐药短期辅助……</div>
+        <div class="meta-row">
+          <div class="tag-row">
+            <span class="chip coral">安全性</span>
+            <span class="chip gray">GI 不良反应</span>
+          </div>
+          <div class="acts">
+            <span><svg width="11" height="11"><use href="#i-eye"/></svg> 752</span>
+            <span><svg width="11" height="11"><use href="#i-bookmark"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="q-row">
+          <div class="qmark">Q</div>
+          <div class="q-text">诺和泰对体重的影响数据（中国 2 型糖尿病人群）？</div>
+        </div>
+        <div class="a-text">SUSTAIN China 研究中，1.0mg 治疗 30 周平均体重下降 4.5kg；亚组分析显示 BMI ≥ 28 患者体重下降更显著……</div>
+        <div class="meta-row">
+          <div class="tag-row">
+            <span class="chip coral">疗效</span>
+            <span class="chip gray">体重管理</span>
+          </div>
+          <div class="acts">
+            <span><svg width="11" height="11"><use href="#i-eye"/></svg> 612</span>
+            <span><svg width="11" height="11"><use href="#i-bookmark"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-card">
+        <div class="q-row">
+          <div class="qmark">Q</div>
+          <div class="q-text">合并 CKD 3 期患者是否需要调整诺和泰剂量？</div>
+        </div>
+        <div class="a-text">eGFR ≥ 30 患者无需调整剂量；&lt; 30 临床证据有限，建议谨慎使用；终末期肾病不推荐……</div>
+        <div class="meta-row">
+          <div class="tag-row">
+            <span class="chip coral">适用人群</span>
+            <span class="chip gray">CKD</span>
+          </div>
+          <div class="acts">
+            <span><svg width="11" height="11"><use href="#i-eye"/></svg> 488</span>
+            <span><svg width="11" height="11"><use href="#i-bookmark"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <span class="screen-label">屏 5 · 产品 QA 列表（搜索 · 异议类型筛选 · 标签 · 收藏）</span>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 6 · 产品 QA 详情（答案隐藏/展开 + 来源材料）
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-faq-detail">
+    <div class="statusbar">
+      <span>10:31</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:60%;background:currentColor"></i></span>
+      </div>
+    </div>
+
+    <div class="detail-header">
+      <button class="back"><svg width="20" height="20"><use href="#i-back"/></svg></button>
+      <div class="acts">
+        <button class="icon-btn fav"><svg width="20" height="20"><use href="#i-bookmark-fill"/></svg></button>
+        <button class="icon-btn"><svg width="20" height="20"><use href="#i-share"/></svg></button>
+        <button class="icon-btn"><svg width="20" height="20"><use href="#i-more-h"/></svg></button>
+      </div>
+    </div>
+
+    <div class="faq-detail-body">
+      <!-- 问题块 -->
+      <div class="faq-q-block">
+        <div class="lbl"><svg width="11" height="11"><use href="#i-question"/></svg> 医生提问</div>
+        <div class="qt">SUSTAIN-6 研究中诺和泰的 MACE 风险降低数据是多少？心血管获益的机制是什么？</div>
+        <div class="meta-tags">
+          <span class="chip coral">疗效</span>
+          <span class="chip gray">心血管获益</span>
+          <span class="chip gray">诺和泰</span>
+        </div>
+      </div>
+
+      <!-- 答案块（默认展开，提供"隐藏答案"入口） -->
+      <div class="faq-a-block">
+        <div class="lbl-row">
+          <span class="lbl"><svg width="12" height="12"><use href="#i-message"/></svg> 标准回答</span>
+          <button class="hide-btn">
+            <svg width="13" height="13"><use href="#i-eye"/></svg>
+            隐藏答案
+          </button>
+        </div>
+        <div class="at">
+          <p>SUSTAIN-6 是诺和泰心血管结局研究（CVOT），共纳入 <b>3297 例</b> T2DM 合并心血管高危人群，中位随访 2.1 年：</p>
+          <p>主要终点 <span class="hl">3 点 MACE（心血管死亡 + 非致死性心梗 + 非致死性卒中）风险降低 26%（HR 0.74, 95%CI 0.58-0.95, p=0.02）</span>。</p>
+          <p><b>心血管获益机制</b>主要涉及：</p>
+          <p>1. <b>抗炎效应</b>：降低 hs-CRP 等炎症标志物；<br>
+             2. <b>改善内皮功能</b>：促进血管舒张；<br>
+             3. <b>稳定斑块</b>：减少氧化应激；<br>
+             4. <b>多重代谢获益</b>：体重、血压、血脂、HbA1c 综合改善。</p>
+        </div>
+      </div>
+
+      <!-- 来源材料 -->
+      <div class="source-card">
+        <div class="src-head">来源材料 · 3 条</div>
+        <div class="src-item">
+          <div class="ic pdf"><svg><use href="#i-file-text"/></svg></div>
+          <div class="info">
+            <div class="t">SUSTAIN-6 主要终点研究报告</div>
+            <div class="s">PDF · 28 页 · NEJM 2016</div>
+          </div>
+          <span class="arrow"><svg width="14" height="14"><use href="#i-right"/></svg></span>
+        </div>
+        <div class="src-item">
+          <div class="ic"><svg><use href="#i-globe"/></svg></div>
+          <div class="info">
+            <div class="t">诺和诺德医学事务部·心血管获益专题</div>
+            <div class="s">网页 · 2025-12 更新</div>
+          </div>
+          <span class="arrow"><svg width="14" height="14"><use href="#i-right"/></svg></span>
+        </div>
+        <div class="src-item">
+          <div class="ic video"><svg><use href="#i-video"/></svg></div>
+          <div class="info">
+            <div class="t">机制讲解视频·5 分钟看懂 GLP-1 心血管获益</div>
+            <div class="s">视频 · 5'12"</div>
+          </div>
+          <span class="arrow"><svg width="14" height="14"><use href="#i-right"/></svg></span>
+        </div>
+      </div>
+
+      <!-- 相关问题推荐 -->
+      <div class="related-list">
+        <div class="head">相关问题</div>
+        <div class="item"><div class="qmark">Q</div> 诺和泰 vs 度拉糖肽心血管获益证据对比？</div>
+        <div class="item"><div class="qmark">Q</div> SUSTAIN-6 亚组分析中老年合并 ASCVD 数据？</div>
+        <div class="item"><div class="qmark">Q</div> REWIND 研究和 SUSTAIN-6 的设计差异？</div>
+      </div>
+    </div>
+  </section>
+  <span class="screen-label">屏 6 · 产品 QA 详情（标准回答 · 来源材料 · 相关问题）</span>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 7 · 异议处理场景列表（按异议类型分类）
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-scenario">
+    <div class="statusbar">
+      <span>10:32</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:58%;background:currentColor"></i></span>
+      </div>
+    </div>
+
+    <div class="app-header">
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-back"/></svg></button>
+      <div class="title">异议处理演练</div>
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-history"/></svg></button>
+    </div>
+
+    <div class="cate-tabs">
+      <span class="tab active">全部</span>
+      <span class="tab">疗效</span>
+      <span class="tab">安全性</span>
+      <span class="tab">用药方案</span>
+      <span class="tab">价格</span>
+      <span class="tab">适用人群</span>
+    </div>
+
+    <div class="scroll" style="padding:0 16px 16px">
+      <!-- 场景卡 1 -->
+      <div class="card" style="margin-bottom:10px">
+        <div class="row gap-12">
+          <div class="avatar s-48 portrait bg-purple"><svg class="portrait-svg"><use href="#p-doc-wang"/></svg></div>
+          <div class="flex-1">
+            <div class="row between">
+              <div class="fw-7 f-15">王伟 · 主任医师</div>
+              <span class="chip green" style="font-size:10px">已完成</span>
+            </div>
+            <div class="text-3 f-11 mt-4">内分泌科 · KOL · 关注心血管获益</div>
+            <div class="tag-row mt-8">
+              <span class="chip coral">疗效</span>
+              <span class="chip gray">心血管获益</span>
+            </div>
+          </div>
+        </div>
+        <div class="row between mt-12" style="padding-top:10px;border-top:1px dashed var(--c-line)">
+          <div class="text-3 f-11">最佳成绩 <b class="text-brand f-14">82</b> 分</div>
+          <button class="btn btn-ghost btn-sm">再来一次 <svg width="11" height="11"><use href="#i-right"/></svg></button>
+        </div>
+      </div>
+
+      <!-- 场景卡 2 -->
+      <div class="card" style="margin-bottom:10px">
+        <div class="row gap-12">
+          <div class="avatar s-48 portrait bg-coral"><svg class="portrait-svg"><use href="#p-doc-li"/></svg></div>
+          <div class="flex-1">
+            <div class="row between">
+              <div class="fw-7 f-15">李雪 · 主治医师</div>
+              <span class="chip" style="font-size:10px">未开始</span>
+            </div>
+            <div class="text-3 f-11 mt-4">内分泌科 · 关注 GI 不良反应</div>
+            <div class="tag-row mt-8">
+              <span class="chip coral">安全性</span>
+              <span class="chip gray">GI 不良反应</span>
+            </div>
+          </div>
+        </div>
+        <div class="row between mt-12" style="padding-top:10px;border-top:1px dashed var(--c-line)">
+          <div class="text-3 f-11">推荐难度 ★★☆</div>
+          <button class="btn btn-grad btn-sm">开始演练 <svg width="11" height="11"><use href="#i-right"/></svg></button>
+        </div>
+      </div>
+
+      <!-- 场景卡 3 -->
+      <div class="card" style="margin-bottom:10px">
+        <div class="row gap-12">
+          <div class="avatar s-48 portrait bg-gold"><svg class="portrait-svg"><use href="#p-doc-zhang"/></svg></div>
+          <div class="flex-1">
+            <div class="row between">
+              <div class="fw-7 f-15">张强 · 教授 / KOL</div>
+              <span class="chip" style="font-size:10px">未开始</span>
+            </div>
+            <div class="text-3 f-11 mt-4">内分泌科 · 学术权威 · 严谨求证</div>
+            <div class="tag-row mt-8">
+              <span class="chip coral">疗效</span>
+              <span class="chip gray">循证依据</span>
+            </div>
+          </div>
+        </div>
+        <div class="row between mt-12" style="padding-top:10px;border-top:1px dashed var(--c-line)">
+          <div class="text-3 f-11">推荐难度 ★★★</div>
+          <button class="btn btn-grad btn-sm">开始演练 <svg width="11" height="11"><use href="#i-right"/></svg></button>
+        </div>
+      </div>
+
+      <!-- 场景卡 4 价格异议 -->
+      <div class="card" style="margin-bottom:10px">
+        <div class="row gap-12">
+          <div class="avatar s-48 portrait bg-blue"><svg class="portrait-svg"><use href="#p-doc-wang"/></svg></div>
+          <div class="flex-1">
+            <div class="row between">
+              <div class="fw-7 f-15">价格异议 · 主任</div>
+              <span class="chip gold" style="font-size:10px">薄弱点推荐</span>
+            </div>
+            <div class="text-3 f-11 mt-4">医保 / 自费纠结 · 中性偏抵触</div>
+            <div class="tag-row mt-8">
+              <span class="chip coral">价格</span>
+              <span class="chip gray">医保策略</span>
+            </div>
+          </div>
+        </div>
+        <div class="row between mt-12" style="padding-top:10px;border-top:1px dashed var(--c-line)">
+          <div class="text-3 f-11">个人共情力 <b style="color:#C9354D">72</b> · 建议练 →</div>
+          <button class="btn btn-coral btn-sm">开始演练 <svg width="11" height="11"><use href="#i-right"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <span class="screen-label">屏 7 · 异议场景列表（医生形象 · 异议类型 · 进度 · 薄弱点推荐）</span>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 8 · 场景入场介绍
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-brief">
+    <div class="statusbar on-dark">
+      <span>10:33</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:56%;background:#fff"></i></span>
+      </div>
+    </div>
+
+    <div class="brief-hero">
+      <div class="nav-row">
+        <button class="icon-btn on-dark"><svg width="20" height="20"><use href="#i-back"/></svg></button>
+        <div class="ttl">场景介绍</div>
+        <button class="icon-btn on-dark"><svg width="20" height="20"><use href="#i-share"/></svg></button>
+      </div>
+
+      <div class="brief-doc-center">
+        <div class="avatar s-72 portrait bg-purple av"><svg class="portrait-svg"><use href="#p-doc-wang"/></svg></div>
+        <div class="nm">王伟 · 主任医师</div>
+        <div class="tg">
+          <span>内分泌科</span>
+          <span>KOL</span>
+          <span>朝阳医院</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="brief-body">
+      <!-- 医生信息 -->
+      <div class="brief-card">
+        <div class="bc-head"><svg><use href="#i-user-md"/></svg> 医生画像</div>
+        <div class="bc-grid">
+          <div class="bc-cell"><span class="k">关注点</span><span class="v">心血管获益 · 亚组数据</span></div>
+          <div class="bc-cell"><span class="k">性格特征</span><span class="v">严谨 · 求证 · 重证据</span></div>
+          <div class="bc-cell"><span class="k">疗法偏好</span><span class="v">指南循证 · 多药联合保守</span></div>
+          <div class="bc-cell"><span class="k">对诺和诺德态度</span><span class="v" style="color:var(--c-success)">中立偏正</span></div>
+        </div>
+      </div>
+
+      <!-- 对话背景 -->
+      <div class="brief-card">
+        <div class="bc-head"><svg><use href="#i-message"/></svg> 对话背景</div>
+        <div class="bc-text">
+          您今天上午到访朝阳医院内分泌科。王主任刚结束门诊，对您准备介绍的诺和泰在<b>合并 ASCVD 患者</b>中的应用持<b>观望态度</b>。他提及上周科会上有同事质疑周制剂在中国老年人群中的真实世界依从性数据。
+        </div>
+      </div>
+
+      <!-- 本轮目标 -->
+      <div class="brief-card">
+        <div class="bc-head"><svg><use href="#i-target"/></svg> 本轮目标</div>
+        <div class="bc-goals">
+          <div class="goal"><span class="ix">1</span>通过 SUSTAIN-6 主要终点 + ASCVD 亚组数据，化解疗效与心血管异议</div>
+          <div class="goal"><span class="ix">2</span>结合中国真实世界依从性研究，回应"依从性下降"质疑</div>
+          <div class="goal"><span class="ix">3</span>达成主任认可，约定下次拜访携带详细亚组报告</div>
+        </div>
+      </div>
+
+      <!-- 四阶段提示 -->
+      <div class="brief-card" style="background:linear-gradient(135deg,#FFF8E0 0%,#FFF3DB 100%);border:1px solid #FFE3A8">
+        <div class="bc-head" style="color:#8B4F00"><svg><use href="#i-lightbulb"/></svg> 四阶段对话框架</div>
+        <div class="bc-stages">
+          <div class="bs-item"><span class="bs-n">1</span><div><b>同理共情</b><br><span>理解医生立场、建立信任</span></div></div>
+          <div class="bs-item"><span class="bs-n">2</span><div><b>深入探询</b><br><span>挖掘异议背后的真实顾虑</span></div></div>
+          <div class="bs-item"><span class="bs-n">3</span><div><b>异议澄清</b><br><span>用证据 / 话术回应核心异议</span></div></div>
+          <div class="bs-item"><span class="bs-n">4</span><div><b>确认共识</b><br><span>确认医生认可、达成下一步</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quiz-bottom">
+      <button class="btn btn-outline" style="flex:1;white-space:nowrap">考核模式 <svg width="11" height="11"><use href="#i-right"/></svg></button>
+      <button class="btn btn-grad" style="flex:1.6;white-space:nowrap;padding:0 14px"><svg width="14" height="14"><use href="#i-play"/></svg> 开始演练 · 学习模式</button>
+    </div>
+  </section>
+  <span class="screen-label">屏 8 · 场景入场介绍（医生画像 · 对话背景 · 本轮目标 · 四阶段框架）</span>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 9 · 异议处理学习模式 · 同理共情阶段（提示卡收起态）
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-chat">
+    <div class="statusbar on-dark">
+      <span>9:44</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:80%;background:#fff"></i></span>
+      </div>
+    </div>
+
+    <div class="chat-header">
+      <div class="chat-top">
+        <button class="back"><svg width="18" height="18"><use href="#i-back"/></svg></button>
+        <div class="doctor">
+          <div class="avatar s-40 portrait bg-purple"><svg class="portrait-svg"><use href="#p-doc-wang"/></svg></div>
+          <div>
+            <div class="name">王伟 · 主任医师</div>
+            <div class="tags">内分泌科 · KOL · 关注心血管获益</div>
+          </div>
+        </div>
+        <button class="quit">学习模式</button>
+      </div>
+
+      <!-- 四阶段进度 · 同理共情进行中 -->
+      <div class="stage-progress">
+        <div class="row1">
+          <span>进度：<b>同理共情</b> · 第 1/4 阶段</span>
+          <span>第 1 轮 · 已对话 0'48"</span>
+        </div>
+        <div class="stages">
+          <div class="stage active"><div class="dot-line"></div><div class="lbl">同理共情</div></div>
+          <div class="stage"><div class="dot-line"></div><div class="lbl">深入探询</div></div>
+          <div class="stage"><div class="dot-line"></div><div class="lbl">异议澄清</div></div>
+          <div class="stage"><div class="dot-line"></div><div class="lbl">确认共识</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-messages">
+      <div class="stage-banner">已进入「同理共情」阶段</div>
+
+      <div class="msg ai">
+        <div class="avatar s-32 portrait bg-purple"><svg class="portrait-svg"><use href="#p-doc-wang"/></svg></div>
+        <div>
+          <div class="bubble">小陈啊，门诊忙完才有空跟你聊。说实话，最近几位用诺和泰的患者反馈不太好——有的人打了几针之后说太麻烦，也有反映胃口受影响的。我觉得这个药对我们科适合度有限。</div>
+          <div class="ts">1 分钟前</div>
+        </div>
+      </div>
+
+      <div class="msg me">
+        <div>
+          <div class="bubble">主任，谢谢您愿意花时间和我聊。听到您说有患者反馈不好，我能理解您此刻的犹豫——任何一位主任医师肯定都希望让患者用药体验顺畅。这些反馈您愿意展开讲讲吗，我想认真听一下具体情况。</div>
+          <div class="ts">刚刚</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI 话术提示卡 · 收起态（单行胶囊条） -->
+    <div class="ai-tip-collapsed">
+      <div class="tc-left">
+        <div class="tc-ic"><svg><use href="#i-sparkle"/></svg></div>
+        <div class="tc-info">
+          <div class="tc-t">AI 话术提示 · 已收起</div>
+          <div class="tc-s">同理共情阶段建议先确认情绪，再追问具体场景</div>
+        </div>
+      </div>
+      <span class="tc-quota">还剩 <b>3</b> 次</span>
+      <button class="tc-toggle"><svg width="14" height="14"><use href="#i-up"/></svg></button>
+    </div>
+
+    <div class="obj-input-bar">
+      <button class="tip-toggle">
+        <svg><use href="#i-lightbulb"/></svg>
+        <span class="badge-num">3</span>
+      </button>
+      <div class="voice-press">
+        <span class="wave"><i></i><i></i><i></i><i></i><i></i></span>
+        按住说话
+      </div>
+      <button class="ipt-switch"><svg><use href="#i-keyboard"/></svg></button>
+    </div>
+  </section>
+  <span class="screen-label">屏 9 · 同理共情阶段（提示卡收起态 · 第 1 轮共情回应）</span>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 10 · 异议处理 · 学习模式对话页（含 AI 提示卡）
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-chat">
+    <div class="statusbar on-dark">
+      <span>9:44</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:80%;background:#fff"></i></span>
+      </div>
+    </div>
+
+    <div class="chat-header">
+      <div class="chat-top">
+        <button class="back"><svg width="18" height="18"><use href="#i-back"/></svg></button>
+        <div class="doctor">
+          <div class="avatar s-40 portrait bg-purple"><svg class="portrait-svg"><use href="#p-doc-wang"/></svg></div>
+          <div>
+            <div class="name">王伟 · 主任医师</div>
+            <div class="tags">内分泌科 · KOL · 关注心血管获益</div>
+          </div>
+        </div>
+        <button class="quit">学习模式</button>
+      </div>
+
+      <!-- 四阶段进度 -->
+      <div class="stage-progress">
+        <div class="row1">
+          <span>进度：<b>异议澄清</b> · 第 3/4 阶段</span>
+          <span>第 5 轮 · 已对话 4'12"</span>
+        </div>
+        <div class="stages">
+          <div class="stage done"><div class="dot-line"></div><div class="lbl">同理共情</div></div>
+          <div class="stage done"><div class="dot-line"></div><div class="lbl">深入探询</div></div>
+          <div class="stage active"><div class="dot-line"></div><div class="lbl">异议澄清</div></div>
+          <div class="stage"><div class="dot-line"></div><div class="lbl">确认共识</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-messages">
+      <div class="stage-banner">已进入「异议澄清」阶段</div>
+
+      <div class="msg ai">
+        <div class="avatar s-32 portrait bg-purple"><svg class="portrait-svg"><use href="#p-doc-wang"/></svg></div>
+        <div>
+          <div class="bubble">小陈，我承认 SUSTAIN 系列数据是有说服力的，但你说的真实世界研究我比较关心样本量——中国患者数据到底有多少？而且 78% 的依从率，是怎么定义的？只是没停药，还是规律按周注射？</div>
+          <div class="ts">2 分钟前</div>
+        </div>
+      </div>
+
+      <div class="msg me">
+        <div>
+          <div class="bubble">王主任您说的对，依从率定义确实关键。我们这次的真实世界研究纳入了 6 家三甲医院共 1842 例 T2DM 患者，依从率定义是"过去 4 周内按计划完成 ≥ 3 次注射"…… </div>
+          <div class="ts">1 分钟前</div>
+        </div>
+      </div>
+
+      <div class="msg ai">
+        <div class="avatar s-32 portrait bg-purple"><svg class="portrait-svg"><use href="#p-doc-wang"/></svg></div>
+        <div>
+          <div class="bubble">嗯，这个定义合理。那对于我们科室常见的合并 ASCVD 的老年患者，这部分人群的依从率数据有没有亚组分析？</div>
+          <div class="ts">刚刚</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI 话术提示卡 -->
+    <div class="ai-tip-card">
+      <div class="tip-head">
+        <div class="ic"><svg><use href="#i-sparkle"/></svg></div>
+        <div class="t">AI 话术提示</div>
+        <span class="quota">本轮还剩 2 次</span>
+        <button class="close"><svg><use href="#i-close"/></svg></button>
+      </div>
+      <div class="tip-section">
+        <div class="lbl"><svg><use href="#i-target"/></svg> 当前处境识别</div>
+        <div class="ct">医生从"质疑"转为"求证"，重点关注合并 ASCVD 老年患者亚组。<b>这是推进到「确认共识」前的关键一步</b>，要给出具体亚组数据。</div>
+      </div>
+      <div class="tip-section">
+        <div class="lbl"><svg><use href="#i-message"/></svg> 建议话术</div>
+        <div class="ct script">"主任您问到点子上了。SUSTAIN-6 中合并 ASCVD 亚组共 1841 例，依从率 76.4%，与整体一致；同时该亚组 MACE 风险降低 26%（HR 0.74）…… 我把这页亚组分析图给您看一下。"</div>
+      </div>
+      <div class="tip-section">
+        <div class="lbl"><svg><use href="#i-tag"/></svg> 策略标签</div>
+        <div class="strategy-row">
+          <span class="stg"><svg width="10" height="10"><use href="#i-check"/></svg> 数据支撑</span>
+          <span class="stg"><svg width="10" height="10"><use href="#i-check"/></svg> 亚组精准</span>
+          <span class="stg"><svg width="10" height="10"><use href="#i-check"/></svg> 视觉化辅助</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 输入栏（学习模式版）-->
+    <div class="obj-input-bar">
+      <button class="tip-toggle">
+        <svg><use href="#i-lightbulb"/></svg>
+        <span class="badge-num">2</span>
+      </button>
+      <div class="voice-press">
+        <span class="wave"><i></i><i></i><i></i><i></i><i></i></span>
+        按住说话
+      </div>
+      <button class="ipt-switch"><svg><use href="#i-keyboard"/></svg></button>
+    </div>
+  </section>
+  <span class="screen-label">屏 10 · 异议处理学习模式（四阶段进度 · AI 话术提示卡 · 语音输入）</span>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 11 · 异议处理复盘（双层评分 · 雷达图 · 标准答案对照）
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-objection-recap">
+    <div class="statusbar on-dark">
+      <span>9:48</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:78%;background:#fff"></i></span>
+      </div>
+    </div>
+
+    <div class="recap-hero">
+      <div class="nav-row">
+        <button class="icon-btn on-dark"><svg width="20" height="20"><use href="#i-back"/></svg></button>
+        <div class="ttl">演练复盘</div>
+        <button class="icon-btn on-dark"><svg width="20" height="20"><use href="#i-share"/></svg></button>
+      </div>
+
+      <div class="doc-mini">
+        <div class="avatar s-32 portrait bg-purple av"><svg class="portrait-svg"><use href="#p-doc-wang"/></svg></div>
+        <span>王伟主任 · 心血管获益异议场景</span>
+      </div>
+
+      <div class="big-score">
+        <span class="v">82</span><span class="u">/100</span>
+      </div>
+      <div class="level-pill"><svg><use href="#i-star"/></svg> 良好</div>
+      <div class="recap-formula">
+        综合分 = 环节能力 <b>85</b> × 70% &nbsp;+&nbsp; 综合素养 <b>76</b> × 30%
+      </div>
+    </div>
+
+    <div class="recap-body">
+      <!-- 第一层 · 环节能力（70%） -->
+      <div class="recap-card">
+        <div class="card-head">
+          <span class="num-pill">第一层</span>
+          <span class="t">环节能力</span>
+          <span class="pct">权重 <b>70%</b></span>
+        </div>
+        <div class="stage-eval">
+          <div class="se-item s1">
+            <div class="se-top"><span class="dot"></span><span class="lbl">同理共情</span></div>
+            <div class="se-score"><span class="v">90</span><span class="u">/100</span><span class="tag good">优秀</span></div>
+            <div class="se-bar"><i style="width:90%"></i></div>
+          </div>
+          <div class="se-item s2">
+            <div class="se-top"><span class="dot"></span><span class="lbl">深入探询</span></div>
+            <div class="se-score"><span class="v">88</span><span class="u">/100</span><span class="tag good">优秀</span></div>
+            <div class="se-bar"><i style="width:88%"></i></div>
+          </div>
+          <div class="se-item s3">
+            <div class="se-top"><span class="dot"></span><span class="lbl">异议澄清</span></div>
+            <div class="se-score"><span class="v">78</span><span class="u">/100</span><span class="tag ok">良好</span></div>
+            <div class="se-bar"><i style="width:78%"></i></div>
+          </div>
+          <div class="se-item s4">
+            <div class="se-top"><span class="dot"></span><span class="lbl">确认共识</span></div>
+            <div class="se-score"><span class="v">84</span><span class="u">/100</span><span class="tag good">优秀</span></div>
+            <div class="se-bar"><i style="width:84%"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 第二层 · 综合素养（30%）· 雷达图 -->
+      <div class="recap-card">
+        <div class="card-head">
+          <span class="num-pill coral">第二层</span>
+          <span class="t">综合素养</span>
+          <span class="pct">权重 <b>30%</b></span>
+        </div>
+        <div class="radar-block">
+          <div class="radar-wrap">
+            <svg viewBox="0 0 168 168">
+              <!-- 同心多边形（菱形）-->
+              <g stroke="#E5EAF2" fill="none" stroke-width="1">
+                <polygon points="84,24 144,84 84,144 24,84"/>
+                <polygon points="84,36 132,84 84,132 36,84"/>
+                <polygon points="84,48 120,84 84,120 48,84"/>
+                <polygon points="84,60 108,84 84,108 60,84"/>
+              </g>
+              <!-- 4 条轴 -->
+              <g stroke="#E5EAF2" stroke-width="1">
+                <line x1="84" y1="24" x2="84" y2="144"/>
+                <line x1="24" y1="84" x2="144" y2="84"/>
+              </g>
+              <!-- 团队均值（虚线灰）：专业76 / 合规80 / 流畅75 / 共情81 -->
+              <polygon points="84,38.4 132,84 84,129 35.4,84"
+                       fill="rgba(199,209,229,0.30)"
+                       stroke="#C7D1E5" stroke-width="1.5"
+                       stroke-dasharray="3 3"/>
+              <!-- 我的（实线 brand）：专业85 / 合规92 / 流畅78 / 共情72 -->
+              <polygon points="84,33 139.2,84 84,130.8 40.8,84"
+                       fill="rgba(0,70,200,0.20)"
+                       stroke="#0046C8" stroke-width="2"/>
+              <!-- 我的顶点小圆 -->
+              <g fill="#0046C8">
+                <circle cx="84" cy="33" r="3"/>
+                <circle cx="139.2" cy="84" r="3"/>
+                <circle cx="84" cy="130.8" r="3"/>
+                <circle cx="40.8" cy="84" r="3"/>
+              </g>
+              <!-- 轴标签 -->
+              <g font-size="10" fill="#4F5A73" font-weight="600" text-anchor="middle">
+                <text x="84" y="16">专业度</text>
+                <text x="160" y="88">合规性</text>
+                <text x="84" y="160">流畅度</text>
+                <text x="10" y="88">共情力</text>
+              </g>
+            </svg>
+          </div>
+          <div class="radar-legend">
+            <div class="lg-item">
+              <span class="sw me"></span>
+              <span class="lbl">专业度</span>
+              <span class="v me">85</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">76</span>
+            </div>
+            <div class="lg-item">
+              <span class="sw me"></span>
+              <span class="lbl">合规性</span>
+              <span class="v me">92</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">80</span>
+            </div>
+            <div class="lg-item">
+              <span class="sw me"></span>
+              <span class="lbl">流畅度</span>
+              <span class="v me">78</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">75</span>
+            </div>
+            <div class="lg-item">
+              <span class="sw me"></span>
+              <span class="lbl">共情力</span>
+              <span class="v me" style="color:#FF7A59">72</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">81</span>
+            </div>
+            <div style="margin-top:6px;padding-top:6px;border-top:1px dashed var(--c-line);font-size:10px;color:var(--c-text-3);display:flex;gap:10px">
+              <span class="row gap-4"><span class="sw me" style="width:10px;height:3px;background:#0046C8;border-radius:2px;display:inline-block"></span>我的</span>
+              <span class="row gap-4"><span class="sw team" style="width:10px;height:3px;background:#C7D1E5;border-radius:2px;display:inline-block;border-top:1px dashed #8E9AAF"></span>团队均值</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 评语 + 改进建议 -->
+      <div class="recap-card">
+        <div class="card-head">
+          <span class="num-pill" style="background:#EDE3FE;color:#6D3DC8">评语</span>
+          <span class="t">AI 综合点评</span>
+        </div>
+        <div style="font-size:13px;line-height:1.7;color:var(--c-text-2);background:linear-gradient(135deg,#F4ECFF 0%,#FFFFFF 100%);border-left:3px solid #8B5CF6;border-radius:8px;padding:12px;margin-bottom:14px">
+          整体表现 <b style="color:var(--c-text)">良好</b>。开场共情自然，深入探询能识别医生关注点；
+          <b style="color:#C9354D">异议澄清阶段</b>给出 SUSTAIN 数据具体但缺少亚组细节；
+          <b style="color:#C9354D">共情力略低于团队均值</b>，可在医生流露犹豫时多一句确认情绪。
+        </div>
+        <div class="advice-list">
+          <div class="adv-item warn">
+            <b>建议 1 · 强化亚组数据准备</b>
+            主任明确问到 ASCVD 老年人群亚组，今后类似场景应主动准备 SUSTAIN-6 / PIONEER 亚组分析，并配合图表辅助。
+          </div>
+          <div class="adv-item">
+            <b>建议 2 · 提升共情力</b>
+            医生表达犹豫时，可使用"我理解您的担心来自……"句式做情绪确认，再进入数据回应。
+          </div>
+        </div>
+      </div>
+
+      <!-- 标准答案对照 -->
+      <div class="recap-card">
+        <div class="card-head">
+          <span class="num-pill" style="background:#DCF6EC;color:#0E8E66">对照</span>
+          <span class="t">标准答案对照</span>
+          <span class="pct" style="color:var(--c-text-3)">第 5 轮</span>
+        </div>
+        <div class="compare-block">
+          <div class="cmp-row me">
+            <div class="who"><svg width="11" height="11" style="color:#C9354D"><use href="#i-tab-mine"/></svg> 我的回答</div>
+            我们这次的真实世界研究纳入了 6 家三甲医院共 1842 例 T2DM 患者，依从率定义是"过去 4 周内按计划完成 ≥ 3 次注射"……
+          </div>
+          <div class="cmp-row std">
+            <div class="who"><svg width="11" height="11"><use href="#i-check-c"/></svg> 标准答法</div>
+            主任问到点上了。我们的真实世界研究纳入 1842 例 T2DM（其中合并 ASCVD 老年亚组 487 例），依从率定义为"过去 4 周完成 ≥ 3 次按时注射"。这个亚组依从率 <b>76.4%</b>，与整体一致；同时 MACE 风险降低 <b>26%（HR 0.74）</b>……
+          </div>
+        </div>
+      </div>
+
+      <!-- 推荐学习资源 -->
+      <div class="recap-card" style="margin-bottom:0">
+        <div class="card-head">
+          <span class="num-pill" style="background:#FFE9E1;color:#C26B45">推荐</span>
+          <span class="t">推荐学习资源</span>
+        </div>
+        <div class="rec-source-row">
+          <div class="rs-card">
+            <div class="rs-cover c1"><svg><use href="#i-file-text"/></svg></div>
+            <div class="rs-t">SUSTAIN-6 ASCVD 亚组分析详解</div>
+            <div class="rs-typ">PDF · 18 页</div>
+          </div>
+          <div class="rs-card">
+            <div class="rs-cover c2"><svg><use href="#i-video"/></svg></div>
+            <div class="rs-t">共情话术 5 句式·医生异议场景</div>
+            <div class="rs-typ">视频 · 6 min</div>
+          </div>
+          <div class="rs-card">
+            <div class="rs-cover c1"><svg><use href="#i-question"/></svg></div>
+            <div class="rs-t">心血管获益相关 QA 集 18 题</div>
+            <div class="rs-typ">QA · 18 题</div>
+          </div>
+        </div>
+        <div class="row gap-8 mt-16">
+          <button class="btn btn-outline" style="flex:1"><svg width="14" height="14"><use href="#i-replay"/></svg> 再来一次</button>
+          <button class="btn btn-grad" style="flex:1.4">查看完整对话回放 <svg width="14" height="14"><use href="#i-right"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <span class="screen-label">屏 11 · 异议复盘（双层评分 · 雷达图 · 标准答案对照 · 推荐资源）</span>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 12 · 病例列表
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-case-list">
+    <div class="statusbar">
+      <span>10:34</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:54%;background:currentColor"></i></span>
+      </div>
+    </div>
+
+    <div class="app-header">
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-back"/></svg></button>
+      <div class="title">病例实景学习</div>
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-history"/></svg></button>
+    </div>
+
+    <div class="search-bar">
+      <svg width="16" height="16" style="color:var(--c-text-3)"><use href="#i-search"/></svg>
+      <input placeholder="搜索病例、合并症、关键词……">
+    </div>
+
+    <div class="cate-tabs">
+      <span class="tab active">全部</span>
+      <span class="tab">入门</span>
+      <span class="tab">进阶</span>
+      <span class="tab">专家</span>
+      <span class="tab">合并 ASCVD</span>
+      <span class="tab">合并 CKD</span>
+      <span class="tab">老年</span>
+    </div>
+
+    <div class="scroll" style="padding:0 16px 16px">
+      <!-- 病例卡 1 -->
+      <div class="case-card">
+        <div class="cc-cover c1"><svg width="34" height="34"><use href="#i-book"/></svg></div>
+        <div class="cc-body">
+          <div class="row between">
+            <div class="fw-7 f-14">T2DM 合并 ASCVD · 老年男性</div>
+            <span class="chip" style="font-size:10px">学习中</span>
+          </div>
+          <div class="text-3 f-11 mt-4">58 岁男 · HbA1c 8.6% · BMI 30 · eGFR 65</div>
+          <div class="tag-row mt-8">
+            <span class="chip coral">进阶</span>
+            <span class="chip gray">心血管获益</span>
+            <span class="chip gray">联合用药</span>
+          </div>
+          <div class="cc-foot">
+            <span><svg width="11" height="11"><use href="#i-clock"/></svg> 预计 20 min</span>
+            <span><svg width="11" height="11"><use href="#i-message"/></svg> 12 轮</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 病例卡 2 -->
+      <div class="case-card">
+        <div class="cc-cover c2"><svg width="34" height="34"><use href="#i-flask"/></svg></div>
+        <div class="cc-body">
+          <div class="row between">
+            <div class="fw-7 f-14">T2DM 合并 CKD 3 期 · 中年女性</div>
+            <span class="chip gold" style="font-size:10px">薄弱点推荐</span>
+          </div>
+          <div class="text-3 f-11 mt-4">52 岁女 · HbA1c 7.8% · eGFR 42 · 蛋白尿</div>
+          <div class="tag-row mt-8">
+            <span class="chip coral">进阶</span>
+            <span class="chip gray">CKD</span>
+            <span class="chip gray">肾保护</span>
+          </div>
+          <div class="cc-foot">
+            <span><svg width="11" height="11"><use href="#i-clock"/></svg> 预计 18 min</span>
+            <span><svg width="11" height="11"><use href="#i-message"/></svg> 10 轮</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 病例卡 3 -->
+      <div class="case-card">
+        <div class="cc-cover c3"><svg width="34" height="34"><use href="#i-pill"/></svg></div>
+        <div class="cc-body">
+          <div class="row between">
+            <div class="fw-7 f-14">新诊断 T2DM · 肥胖年轻患者</div>
+            <span class="chip green" style="font-size:10px">已完成</span>
+          </div>
+          <div class="text-3 f-11 mt-4">34 岁女 · HbA1c 8.2% · BMI 32 · 备孕期</div>
+          <div class="tag-row mt-8">
+            <span class="chip">入门</span>
+            <span class="chip gray">体重管理</span>
+            <span class="chip gray">起始方案</span>
+          </div>
+          <div class="cc-foot">
+            <span>本次得分 <b class="text-brand">86</b></span>
+            <span><svg width="11" height="11"><use href="#i-replay"/></svg> 再练一次</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 病例卡 4 -->
+      <div class="case-card">
+        <div class="cc-cover c4"><svg width="34" height="34"><use href="#i-heart"/></svg></div>
+        <div class="cc-body">
+          <div class="row between">
+            <div class="fw-7 f-14">T2DM 合并心衰 · 老年男性</div>
+            <span class="chip" style="font-size:10px">未开始</span>
+          </div>
+          <div class="text-3 f-11 mt-4">68 岁男 · HbA1c 9.1% · NYHA II · LVEF 38%</div>
+          <div class="tag-row mt-8">
+            <span class="chip coral">专家</span>
+            <span class="chip gray">心衰</span>
+            <span class="chip gray">SGLT-2i 联用</span>
+          </div>
+          <div class="cc-foot">
+            <span><svg width="11" height="11"><use href="#i-clock"/></svg> 预计 25 min</span>
+            <span><svg width="11" height="11"><use href="#i-message"/></svg> 15+ 轮</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <span class="screen-label">屏 12 · 病例列表（疾病组合 · 难度 · 状态 · 薄弱点推荐）</span>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 13 · 病例背景介绍
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-case-brief">
+    <div class="statusbar on-dark">
+      <span>10:35</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:52%;background:#fff"></i></span>
+      </div>
+    </div>
+
+    <div class="case-brief-hero">
+      <div class="nav-row">
+        <button class="icon-btn on-dark"><svg width="20" height="20"><use href="#i-back"/></svg></button>
+        <div class="ttl">病例 #3 · 病例背景</div>
+        <button class="icon-btn on-dark"><svg width="20" height="20"><use href="#i-share"/></svg></button>
+      </div>
+      <div class="cbh-tag">
+        <svg width="12" height="12"><use href="#i-book"/></svg> T2DM 合并 ASCVD · 老年男性 · 进阶
+      </div>
+      <div class="cbh-title">58 岁男性，T2DM 10 年，<br>合并 ASCVD，HbA1c 8.6%</div>
+    </div>
+
+    <div class="brief-body">
+      <!-- 患者基本信息 -->
+      <div class="brief-card">
+        <div class="bc-head"><svg><use href="#i-user-md"/></svg> 患者基本信息</div>
+        <div class="bc-grid">
+          <div class="bc-cell"><span class="k">年龄 / 性别</span><span class="v">58 岁 · 男</span></div>
+          <div class="bc-cell"><span class="k">BMI</span><span class="v">30 kg/m²</span></div>
+          <div class="bc-cell"><span class="k">病程</span><span class="v">T2DM 10 年</span></div>
+          <div class="bc-cell"><span class="k">合并症</span><span class="v">ASCVD · 高血压</span></div>
+        </div>
+      </div>
+
+      <!-- 主诉与现病史 -->
+      <div class="brief-card">
+        <div class="bc-head"><svg><use href="#i-message"/></svg> 主诉与现病史</div>
+        <div class="bc-text">
+          因"<b>血糖控制不佳 6 个月</b>"门诊就诊。患者既往规律服用二甲双胍 + 格列美脲，近半年 HbA1c 升至 8.6%，伴体重增加 3kg。无明显多饮多尿，否认低血糖发作。
+        </div>
+      </div>
+
+      <!-- 检查结果 -->
+      <div class="brief-card">
+        <div class="bc-head"><svg><use href="#i-flask"/></svg> 检查结果</div>
+        <div class="bc-grid">
+          <div class="bc-cell"><span class="k">HbA1c</span><span class="v" style="color:#C9354D">8.6%</span></div>
+          <div class="bc-cell"><span class="k">FPG</span><span class="v" style="color:#C9354D">8.9 mmol/L</span></div>
+          <div class="bc-cell"><span class="k">eGFR</span><span class="v">65 mL/min</span></div>
+          <div class="bc-cell"><span class="k">LDL-C</span><span class="v">2.1 mmol/L</span></div>
+          <div class="bc-cell"><span class="k">尿白蛋白</span><span class="v">阴性</span></div>
+          <div class="bc-cell"><span class="k">心电图</span><span class="v" style="color:var(--c-accent-2)">陈旧性下壁心梗</span></div>
+        </div>
+      </div>
+
+      <!-- 当前用药 -->
+      <div class="brief-card">
+        <div class="bc-head"><svg><use href="#i-pill"/></svg> 当前用药</div>
+        <div class="bc-text" style="font-size:12px">
+          • 二甲双胍 1000 mg bid<br>
+          • 格列美脲 2 mg qd<br>
+          • 阿托伐他汀 20 mg qn · 阿司匹林 100 mg qd · 培哚普利 4 mg qd
+        </div>
+      </div>
+
+      <!-- 学习目标 -->
+      <div class="brief-card" style="background:linear-gradient(135deg,#DEF7FA 0%,#FFFFFF 100%);border:1px solid #B3ECF2">
+        <div class="bc-head" style="color:#008994"><svg><use href="#i-target"/></svg> 本病例学习目标</div>
+        <div class="bc-goals">
+          <div class="goal"><span class="ix" style="background:linear-gradient(135deg,#00C2D1,#0080A8)">1</span>掌握 T2DM 合并 ASCVD 患者的降糖路径与药物优先级</div>
+          <div class="goal"><span class="ix" style="background:linear-gradient(135deg,#00C2D1,#0080A8)">2</span>理解 GLP-1 RA 与磺脲类联用时的剂量调整与低血糖管理</div>
+          <div class="goal"><span class="ix" style="background:linear-gradient(135deg,#00C2D1,#0080A8)">3</span>能基于 SUSTAIN-6 亚组数据做合理选择并向医生解释</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quiz-bottom">
+      <button class="btn btn-outline" style="flex:1"><svg width="14" height="14"><use href="#i-bookmark"/></svg> 收藏</button>
+      <button class="btn btn-grad" style="flex:1.8"><svg width="14" height="14"><use href="#i-message"/></svg> 与 AI 导师开始讨论</button>
+    </div>
+  </section>
+  <span class="screen-label">屏 13 · 病例背景介绍（基本信息 · 主诉 · 检查 · 用药 · 学习目标）</span>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 14 · 病例对话（AI 医生导师 · 双向问答）
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-case-chat">
+    <div class="statusbar on-dark">
+      <span>9:50</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:75%;background:#fff"></i></span>
+      </div>
+    </div>
+
+    <div class="case-header">
+      <div class="nav-row">
+        <button class="back"><svg width="18" height="18"><use href="#i-back"/></svg></button>
+        <div class="doc-block" style="flex:1;padding:0">
+          <div class="avatar s-40 av" style="background:linear-gradient(135deg,#00C2D1 0%,#0080A8 100%);border:2px solid rgba(255,255,255,0.30);display:flex;align-items:center;justify-content:center;color:#fff">
+            <svg width="22" height="22"><use href="#i-sparkle"/></svg>
+          </div>
+          <div class="info">
+            <div class="nm">AI 医生导师</div>
+            <div class="s"><span class="live-dot"></span>在线指导中 · 病例 #3</div>
+          </div>
+        </div>
+        <button class="end">结束</button>
+      </div>
+      <div class="case-summary">
+        <svg><use href="#i-book"/></svg>
+        <span><b>病例</b>：58 岁男性·T2DM 10 年·合并 ASCVD·BMI 30·HbA1c 8.6%·eGFR 65·当前用药二甲双胍+格列美脲</span>
+      </div>
+    </div>
+
+    <div class="chat-messages">
+      <div class="msg ai case-msg">
+        <div class="avatar s-32 av-mentor"><svg width="16" height="16"><use href="#i-sparkle"/></svg></div>
+        <div>
+          <div class="bubble">先来个开场题：针对这个 58 岁、合并 ASCVD、HbA1c 8.6% 的患者，你会优先选择哪一类降糖药？为什么？</div>
+          <div class="ts">3 分钟前</div>
+        </div>
+      </div>
+
+      <div class="msg me">
+        <div>
+          <div class="bubble">我会优先选择 <b>GLP-1 RA</b>，理由有三：HbA1c 距离目标差 ≥ 1.5%，需要强力降糖；合并 ASCVD，应优选具有心血管获益证据的药物；BMI 偏高，GLP-1 RA 有减重获益。</div>
+          <div class="ts">2 分钟前</div>
+        </div>
+      </div>
+
+      <div class="msg ai case-msg">
+        <div class="avatar s-32 av-mentor"><svg width="16" height="16"><use href="#i-sparkle"/></svg></div>
+        <div>
+          <div class="bubble">很好，思路清晰。那再追问一步：在 GLP-1 RA 类里，你会选哪个？现在循证依据最强的是哪个？</div>
+          <div class="ts">1 分钟前</div>
+        </div>
+      </div>
+
+      <div class="knowledge-strip"><svg><use href="#i-check"/></svg> 已覆盖知识点：ADA/EASD 共识 · ASCVD 患者降糖路径</div>
+
+      <div class="msg me">
+        <div>
+          <div class="bubble">基于 SUSTAIN-6，我会推荐 <b>诺和泰（司美格鲁肽周制剂）</b>，该研究在合并 ASCVD 人群中 MACE 风险降低 26%（HR 0.74）。同时我想反问：这位患者的格列美脲，可否在加用 GLP-1 RA 时停用？担心低血糖叠加。</div>
+          <div class="ts">刚刚</div>
+        </div>
+      </div>
+
+      <div class="msg ai case-msg">
+        <div class="avatar s-32 av-mentor"><svg width="16" height="16"><use href="#i-sparkle"/></svg></div>
+        <div>
+          <div class="bubble">你这个反问问得很好——临床实践中确实是关键。指南推荐：当 GLP-1 RA 联合磺脲类时，应<b>下调磺脲剂量 50% 或停用</b>，以降低低血糖叠加风险……</div>
+          <div class="ts">刚刚</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-input-bar" style="border-top:1px solid var(--c-line)">
+      <button class="clip-btn"><svg><use href="#i-plus"/></svg></button>
+      <div class="ipt placeholder">回复或反问导师……</div>
+      <button class="voice-mini"><svg width="18" height="18"><use href="#i-mic"/></svg></button>
+      <button class="send-btn"><svg><use href="#i-send"/></svg></button>
+    </div>
+  </section>
+  <span class="screen-label">屏 14 · 病例对话（AI 医生导师 · 双向问答 · 知识点覆盖提示）</span>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 15 · 考试中心列表
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-exam-list">
+    <div class="statusbar on-dark">
+      <span>9:52</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:72%;background:#fff"></i></span>
+      </div>
+    </div>
+
+    <div class="exam-hero">
+      <div class="app-header on-dark" style="padding:0">
+        <div></div>
+        <div class="row gap-4">
+          <button class="icon-btn glass"><svg width="18" height="18"><use href="#i-history"/></svg></button>
+          <button class="icon-btn glass"><svg width="18" height="18"><use href="#i-help"/></svg></button>
+        </div>
+      </div>
+      <div class="exam-title-big">考试中心</div>
+      <div class="exam-sub-big">Q2 季度考试已开放 · 截止 05-28 24:00</div>
+
+      <div class="exam-stat-grid">
+        <div class="item"><div class="num">28</div><div class="lbl">已通过</div></div>
+        <div class="item"><div class="num">3</div><div class="lbl">待参加</div></div>
+        <div class="item"><div class="num">86<span style="font-size:11px"> 分</span></div><div class="lbl">平均得分</div></div>
+      </div>
+    </div>
+
+    <div class="exam-tabs">
+      <div class="t active">全部</div>
+      <div class="t">QA 问答</div>
+      <div class="t">异议处理</div>
+      <div class="t">病例讨论</div>
+    </div>
+
+    <div class="exam-list-body scroll">
+      <!-- 待参加 · QA 问答考试 -->
+      <div class="exam-card">
+        <div class="ec-head">
+          <div class="ic qa"><svg><use href="#i-question"/></svg></div>
+          <div class="info">
+            <div class="t">Q2 季度 · 诺和泰产品 QA 考试</div>
+            <div class="s">
+              <span><svg><use href="#i-file-text"/></svg> 20 题</span>
+              <span><svg><use href="#i-clock"/></svg> 限时 30 min</span>
+              <span><svg><use href="#i-target"/></svg> 合格 70 分</span>
+            </div>
+          </div>
+          <span class="status pending">待参加</span>
+        </div>
+        <div class="ec-foot">
+          <div class="deadline"><svg><use href="#i-clock"/></svg> 还剩 2 天 11 小时</div>
+          <button class="btn btn-grad btn-mini">开始考试</button>
+        </div>
+      </div>
+
+      <!-- 待参加 · 异议处理考核 -->
+      <div class="exam-card">
+        <div class="ec-head">
+          <div class="ic obj"><svg><use href="#i-stethoscope"/></svg></div>
+          <div class="info">
+            <div class="t">异议处理认证 · 心血管获益场景</div>
+            <div class="s">
+              <span><svg><use href="#i-user-md"/></svg> 1 场景</span>
+              <span><svg><use href="#i-clock"/></svg> 限时 15 min</span>
+              <span style="color:#C9354D">无 AI 提示</span>
+            </div>
+          </div>
+          <span class="status pending">待参加</span>
+        </div>
+        <div class="ec-foot">
+          <div class="deadline"><svg><use href="#i-clock"/></svg> 还剩 2 天 11 小时</div>
+          <button class="btn btn-grad btn-mini">开始考核</button>
+        </div>
+      </div>
+
+      <!-- 待参加 · 病例讨论考核 -->
+      <div class="exam-card">
+        <div class="ec-head">
+          <div class="ic case"><svg><use href="#i-book"/></svg></div>
+          <div class="info">
+            <div class="t">病例讨论认证 · T2DM 合并 ASCVD</div>
+            <div class="s">
+              <span><svg><use href="#i-book"/></svg> 1 病例</span>
+              <span><svg><use href="#i-clock"/></svg> 限时 20 min</span>
+              <span><svg><use href="#i-radar"/></svg> 5 维评估</span>
+            </div>
+          </div>
+          <span class="status pending">待参加</span>
+        </div>
+        <div class="ec-foot">
+          <div class="deadline"><svg><use href="#i-clock"/></svg> 还剩 2 天 11 小时</div>
+          <button class="btn btn-grad btn-mini">开始考核</button>
+        </div>
+      </div>
+
+      <!-- 已完成 · QA 考试 -->
+      <div class="exam-card">
+        <div class="ec-head">
+          <div class="ic qa"><svg><use href="#i-question"/></svg></div>
+          <div class="info">
+            <div class="t">Q1 季度 · 诺和泰产品 QA 考试</div>
+            <div class="s">
+              <span>2026-02-15 完成</span>
+              <span>用时 24 min</span>
+              <span style="color:var(--c-success)">已通过</span>
+            </div>
+          </div>
+          <span class="status done">已通过</span>
+        </div>
+        <div class="ec-foot">
+          <div class="score"><span class="v">92</span><span class="u">/100</span> · <span style="color:var(--c-success)">超过 78% 同事</span></div>
+          <button class="btn btn-ghost btn-mini">查看复盘 <svg width="11" height="11"><use href="#i-right"/></svg></button>
+        </div>
+      </div>
+
+      <!-- 已完成 · 异议处理（待提升） -->
+      <div class="exam-card">
+        <div class="ec-head">
+          <div class="ic obj"><svg><use href="#i-stethoscope"/></svg></div>
+          <div class="info">
+            <div class="t">异议处理认证 · 价格异议场景</div>
+            <div class="s">
+              <span>2026-01-22 完成</span>
+              <span>用时 13 min</span>
+              <span style="color:var(--c-accent-2)">待提升</span>
+            </div>
+          </div>
+          <span class="status done">已通过</span>
+        </div>
+        <div class="ec-foot">
+          <div class="score"><span class="v low">72</span><span class="u">/100</span> · <span style="color:var(--c-accent-2)">共情力偏低</span></div>
+          <button class="btn btn-ghost btn-mini">查看复盘 <svg width="11" height="11"><use href="#i-right"/></svg></button>
+        </div>
+      </div>
+    </div>
+
+    <nav class="tabbar v5">
+      <div class="tab"><svg class="ic"><use href="#i-tab-home2"/></svg><span>首页</span></div>
+      <div class="tab"><svg class="ic"><use href="#i-tab-ask"/></svg><span>AI 问答</span></div>
+      <div class="tab active"><svg class="ic"><use href="#i-tab-exam"/></svg><span>考试中心</span></div>
+      <div class="tab"><svg class="ic"><use href="#i-tab-rank"/></svg><span>排行榜</span></div>
+      <div class="tab"><svg class="ic"><use href="#i-tab-mine"/></svg><span>我的</span></div>
+    </nav>
+  </section>
+  <span class="screen-label">屏 15 · 考试中心列表（QA / 异议 / 病例 三类 · 计时 · 合格线）</span>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 16 · QA 考试答题页（客观 + 主观 + 倒计时）
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-quiz">
+    <div class="statusbar on-dark">
+      <span>10:36</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:50%;background:#fff"></i></span>
+      </div>
+    </div>
+
+    <div class="quiz-header">
+      <div class="quiz-top">
+        <button class="back"><svg width="18" height="18"><use href="#i-back"/></svg></button>
+        <div class="ttl">Q2 季度 · 诺和泰产品 QA 考试</div>
+        <button class="quit">交卷</button>
+      </div>
+      <div class="quiz-counter">
+        <div>
+          第 <b>8</b> / 20 题 · 单选
+        </div>
+        <div style="color:#FFE69E;font-weight:700;font-variant-numeric:tabular-nums">
+          <svg width="13" height="13" style="vertical-align:middle"><use href="#i-clock"/></svg> 21:36
+        </div>
+      </div>
+      <div class="quiz-progress" style="margin-top:8px"><i style="width:40%"></i></div>
+    </div>
+
+    <div class="quiz-body scroll">
+      <div class="q-tag"><svg width="11" height="11"><use href="#i-question"/></svg> 客观题 · 单选</div>
+      <div class="q-stem">SUSTAIN-6 研究中诺和泰治疗组 3 点 MACE（心血管死亡 + 非致死性心梗 + 非致死性卒中）的相对风险降低是？</div>
+      <div class="options">
+        <div class="option">
+          <div class="ind">A</div>
+          <div>15%（HR 0.85）</div>
+        </div>
+        <div class="option selected">
+          <div class="ind">B</div>
+          <div>26%（HR 0.74）</div>
+        </div>
+        <div class="option">
+          <div class="ind">C</div>
+          <div>32%（HR 0.68）</div>
+        </div>
+        <div class="option">
+          <div class="ind">D</div>
+          <div>无统计学差异</div>
+        </div>
+      </div>
+
+      <div style="margin-top:20px;padding:14px;background:linear-gradient(135deg,#FFF8E0 0%,#FFF3DB 100%);border-radius:var(--r-md);font-size:12px;color:#8B4F00;line-height:1.55;display:flex;gap:8px">
+        <svg width="14" height="14" style="flex-shrink:0;margin-top:1px"><use href="#i-info"/></svg>
+        <span>提示：本题为单选必答。考试中不显示答案与解析，错题将归入个人错题集。</span>
+      </div>
+
+      <div style="margin-top:18px">
+        <div class="text-3 f-12 mb-12">答题卡 · 已答 12 / 20</div>
+        <div style="display:grid;grid-template-columns:repeat(8,1fr);gap:8px">
+          <div style="height:32px;border-radius:8px;background:#DCF6EC;color:#0E8E66;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">1</div>
+          <div style="height:32px;border-radius:8px;background:#DCF6EC;color:#0E8E66;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">2</div>
+          <div style="height:32px;border-radius:8px;background:#DCF6EC;color:#0E8E66;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">3</div>
+          <div style="height:32px;border-radius:8px;background:#DCF6EC;color:#0E8E66;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">4</div>
+          <div style="height:32px;border-radius:8px;background:#DCF6EC;color:#0E8E66;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">5</div>
+          <div style="height:32px;border-radius:8px;background:#FFF3DB;color:#C77D00;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center;border:1.5px solid #FFB454">6<svg width="10" height="10" style="margin-left:2px"><use href="#i-bookmark-fill"/></svg></div>
+          <div style="height:32px;border-radius:8px;background:#DCF6EC;color:#0E8E66;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">7</div>
+          <div style="height:32px;border-radius:8px;background:var(--c-brand);color:#fff;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,70,200,0.30)">8</div>
+          <div style="height:32px;border-radius:8px;background:var(--c-bg-soft);color:var(--c-text-3);font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">9</div>
+          <div style="height:32px;border-radius:8px;background:var(--c-bg-soft);color:var(--c-text-3);font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">10</div>
+          <div style="height:32px;border-radius:8px;background:var(--c-bg-soft);color:var(--c-text-3);font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">11</div>
+          <div style="height:32px;border-radius:8px;background:var(--c-bg-soft);color:var(--c-text-3);font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">12</div>
+          <div style="height:32px;border-radius:8px;background:var(--c-bg-soft);color:var(--c-text-3);font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">13</div>
+          <div style="height:32px;border-radius:8px;background:var(--c-bg-soft);color:var(--c-text-3);font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">14</div>
+          <div style="height:32px;border-radius:8px;background:var(--c-bg-soft);color:var(--c-text-3);font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">15</div>
+          <div style="height:32px;border-radius:8px;background:linear-gradient(135deg,#FFE9E1,#FFD2C2);color:#C26B45;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">16<svg width="9" height="9" style="margin-left:2px"><use href="#i-mic"/></svg></div>
+          <div style="height:32px;border-radius:8px;background:linear-gradient(135deg,#FFE9E1,#FFD2C2);color:#C26B45;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">17<svg width="9" height="9" style="margin-left:2px"><use href="#i-mic"/></svg></div>
+          <div style="height:32px;border-radius:8px;background:linear-gradient(135deg,#FFE9E1,#FFD2C2);color:#C26B45;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">18<svg width="9" height="9" style="margin-left:2px"><use href="#i-mic"/></svg></div>
+          <div style="height:32px;border-radius:8px;background:linear-gradient(135deg,#FFE9E1,#FFD2C2);color:#C26B45;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">19<svg width="9" height="9" style="margin-left:2px"><use href="#i-mic"/></svg></div>
+          <div style="height:32px;border-radius:8px;background:linear-gradient(135deg,#FFE9E1,#FFD2C2);color:#C26B45;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">20<svg width="9" height="9" style="margin-left:2px"><use href="#i-mic"/></svg></div>
+        </div>
+        <div class="row gap-12 mt-12 f-11 text-3">
+          <span class="row gap-4"><span style="width:10px;height:10px;border-radius:3px;background:#DCF6EC;display:inline-block"></span>已答</span>
+          <span class="row gap-4"><span style="width:10px;height:10px;border-radius:3px;background:#FFF3DB;display:inline-block;border:1.5px solid #FFB454"></span>标记</span>
+          <span class="row gap-4"><span style="width:10px;height:10px;border-radius:3px;background:#FFE9E1;display:inline-block"></span>主观题</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="quiz-bottom">
+      <button class="btn btn-outline" style="flex:1"><svg width="14" height="14"><use href="#i-bookmark"/></svg> 标记</button>
+      <button class="btn btn-outline" style="flex:1">上一题</button>
+      <button class="btn btn-grad" style="flex:1.4">下一题 <svg width="11" height="11"><use href="#i-right"/></svg></button>
+    </div>
+  </section>
+  <span class="screen-label">屏 16 · QA 考试答题（客观题 · 倒计时 · 答题卡 · 主观题语音标识）</span>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 17 · 考试结果页（QA 考试）
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-exam-result">
+    <div class="statusbar on-dark">
+      <span>10:18</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:68%;background:#fff"></i></span>
+      </div>
+    </div>
+
+    <div class="result-hero">
+      <div class="nav-row">
+        <button class="icon-btn on-dark"><svg width="20" height="20"><use href="#i-close"/></svg></button>
+        <div class="ttl">考试结果</div>
+        <button class="icon-btn on-dark"><svg width="20" height="20"><use href="#i-share"/></svg></button>
+      </div>
+
+      <div class="result-pass-badge"><svg><use href="#i-check"/></svg> 已通过 · 超过 78% 同事</div>
+
+      <div class="result-score-block">
+        <div class="big">92</div>
+        <div class="deno">总分 <b>100</b> · 合格线 70</div>
+      </div>
+
+      <div class="result-meta-row">
+        <div class="item">
+          <div class="v">24'12"</div>
+          <div class="l">用时</div>
+        </div>
+        <div class="item">
+          <div class="v">17/20</div>
+          <div class="l">正确题数</div>
+        </div>
+        <div class="item">
+          <div class="v">+8</div>
+          <div class="l">vs 上季度</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-body">
+      <!-- 题型分布（精简数据条）-->
+      <div class="qtype-compact">
+        <div class="qtc-item">
+          <div class="qtc-l">
+            <span class="dot" style="background:var(--c-brand)"></span>
+            <span class="lbl">客观题正确率</span>
+          </div>
+          <div class="qtc-r">
+            <span class="v">93%</span>
+            <span class="meta">14/15 题</span>
+            <span class="delta up"><svg width="10" height="10"><use href="#i-trend-up"/></svg> +6%</span>
+          </div>
+        </div>
+        <div class="qtc-item">
+          <div class="qtc-l">
+            <span class="dot" style="background:var(--c-accent-2)"></span>
+            <span class="lbl">主观题平均分</span>
+          </div>
+          <div class="qtc-r">
+            <span class="v">88<span class="u">/100</span></span>
+            <span class="meta">5 题</span>
+            <span class="delta up"><svg width="10" height="10"><use href="#i-trend-up"/></svg> +12</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 整体数据统计 -->
+      <div class="recap-card">
+        <div class="card-head">
+          <span class="num-pill" style="background:#DEF7FA;color:#008994">统计</span>
+          <span class="t">整体数据对照</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
+          <div style="background:var(--c-bg);padding:10px;border-radius:8px;text-align:center">
+            <div style="font-size:11px;color:var(--c-text-3);margin-bottom:4px">本次</div>
+            <div style="font-size:18px;font-weight:800;color:var(--c-brand)">92</div>
+          </div>
+          <div style="background:var(--c-bg);padding:10px;border-radius:8px;text-align:center">
+            <div style="font-size:11px;color:var(--c-text-3);margin-bottom:4px">我的均值</div>
+            <div style="font-size:18px;font-weight:800;color:var(--c-text-2)">84</div>
+          </div>
+          <div style="background:var(--c-bg);padding:10px;border-radius:8px;text-align:center">
+            <div style="font-size:11px;color:var(--c-text-3);margin-bottom:4px">区域均值</div>
+            <div style="font-size:18px;font-weight:800;color:var(--c-text-2)">79</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 错题回顾 -->
+      <div class="recap-card" style="padding-bottom:8px">
+        <div class="card-head">
+          <span class="num-pill" style="background:#FFE0E0;color:#C9354D">错题</span>
+          <span class="t">错题回顾</span>
+          <span class="pct" style="color:var(--c-text-3)">3 题</span>
+        </div>
+
+        <div class="wrong-card" style="margin-bottom:10px;box-shadow:none;border:1px solid var(--c-line)">
+          <div class="w-head">
+            <span class="n">第 7 题</span>
+            <span class="typ">单选 · 错</span>
+          </div>
+          <div class="w-q">SUSTAIN-6 研究中诺和泰治疗组 3 点 MACE 风险降低多少？</div>
+          <div class="w-opt wrong">
+            <div class="ix">A</div>
+            <div class="x" style="flex:1">15%（HR 0.85）</div>
+            <span class="lbl">我的</span>
+          </div>
+          <div class="w-opt correct">
+            <div class="ix">B</div>
+            <div class="x" style="flex:1">26%（HR 0.74）</div>
+            <span class="lbl">正确</span>
+          </div>
+          <div style="font-size:11px;color:var(--c-text-3);padding-top:6px;border-top:1px dashed var(--c-line);margin-top:6px;display:flex;align-items:center;gap:6px">
+            <svg width="11" height="11" style="color:var(--c-brand)"><use href="#i-link"/></svg>
+            来源：SUSTAIN-6 研究主要终点报告·诺和诺德医学事务部
+          </div>
+        </div>
+
+        <div class="wrong-card" style="margin-bottom:10px;box-shadow:none;border:1px solid var(--c-line)">
+          <div class="w-head">
+            <span class="n">第 14 题</span>
+            <span class="typ">多选 · 错</span>
+          </div>
+          <div class="w-q">下列哪些是诺和泰常见的胃肠道不良反应处理建议？</div>
+          <div class="w-opt correct">
+            <div class="ix">A</div>
+            <div class="x" style="flex:1">起始小剂量逐步递增</div>
+            <span class="lbl">正确</span>
+          </div>
+          <div class="w-opt wrong">
+            <div class="ix">B</div>
+            <div class="x" style="flex:1">出现恶心立即停药</div>
+            <span class="lbl">我的</span>
+          </div>
+          <div class="w-opt correct">
+            <div class="ix">C</div>
+            <div class="x" style="flex:1">饮食小份多次，避免高脂</div>
+            <span class="lbl">正确</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gap-8" style="margin-top:8px">
+        <button class="btn btn-outline" style="flex:1">加入错题集</button>
+        <button class="btn btn-grad" style="flex:1.4">查看完整答题报告 <svg width="14" height="14"><use href="#i-right"/></svg></button>
+      </div>
+    </div>
+  </section>
+  <span class="screen-label">屏 17 · 考试结果（QA · 题型分布 · 错题回顾 · 区域对照）</span>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 18 · 病例考核 5 维复盘
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-objection-recap">
+    <div class="statusbar on-dark">
+      <span>10:55</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:46%;background:#fff"></i></span>
+      </div>
+    </div>
+
+    <div class="recap-hero" style="background:linear-gradient(135deg,#00C2D1 0%,#0080A8 100%)">
+      <div class="nav-row">
+        <button class="icon-btn on-dark"><svg width="20" height="20"><use href="#i-back"/></svg></button>
+        <div class="ttl">病例考核复盘</div>
+        <button class="icon-btn on-dark"><svg width="20" height="20"><use href="#i-share"/></svg></button>
+      </div>
+
+      <div class="doc-mini">
+        <svg width="16" height="16"><use href="#i-book"/></svg>
+        <span>病例 #3 · T2DM 合并 ASCVD · 用时 18'42"</span>
+      </div>
+
+      <div class="big-score">
+        <span class="v">78</span><span class="u">/100</span>
+      </div>
+      <div class="level-pill" style="background:linear-gradient(135deg,#FFE3A8,#FFB454);color:#7A4A00"><svg><use href="#i-star"/></svg> 良好</div>
+      <div class="recap-formula">5 维评估 · 等权重均值法</div>
+    </div>
+
+    <div class="recap-body">
+      <!-- 5 维评分 + 雷达图 -->
+      <div class="recap-card">
+        <div class="card-head">
+          <span class="num-pill" style="background:#DEF7FA;color:#008994">5 维</span>
+          <span class="t">病例讨论能力评估</span>
+        </div>
+
+        <div class="radar-block">
+          <div class="radar-wrap">
+            <svg viewBox="0 0 168 168">
+              <!-- 同心五边形 -->
+              <g stroke="#E5EAF2" fill="none" stroke-width="1">
+                <polygon points="84,24 141,65.4 119.4,128.6 48.6,128.6 27,65.4"/>
+                <polygon points="84,39 126.75,70.55 110.55,118 57.45,118 41.25,70.55"/>
+                <polygon points="84,54 112.5,75.7 101.7,107.4 66.3,107.4 55.5,75.7"/>
+                <polygon points="84,69 98.25,80.85 92.85,96.8 75.15,96.8 69.75,80.85"/>
+              </g>
+              <g stroke="#E5EAF2" stroke-width="1">
+                <line x1="84" y1="84" x2="84" y2="24"/>
+                <line x1="84" y1="84" x2="141" y2="65.4"/>
+                <line x1="84" y1="84" x2="119.4" y2="128.6"/>
+                <line x1="84" y1="84" x2="48.6" y2="128.6"/>
+                <line x1="84" y1="84" x2="27" y2="65.4"/>
+              </g>
+              <!-- 团队均值（虚线）疾病82/路径78/药物85/证据76/合规88 -->
+              <polygon points="84,34.8 131.7,68.6 113.55,123.32 56.43,124.96 33.96,62.92"
+                       fill="rgba(199,209,229,0.30)"
+                       stroke="#C7D1E5" stroke-width="1.4" stroke-dasharray="3 3"/>
+              <!-- 本次（实线青）：疾病80/路径72/药物88/证据82/合规68 -->
+              <polygon points="84,36 130.2,69.84 116.04,118.3 51.0,116.7 38.16,62.07"
+                       fill="rgba(0,194,209,0.22)"
+                       stroke="#00C2D1" stroke-width="2"/>
+              <g fill="#00C2D1">
+                <circle cx="84" cy="36" r="3"/>
+                <circle cx="130.2" cy="69.84" r="3"/>
+                <circle cx="116.04" cy="118.3" r="3"/>
+                <circle cx="51.0" cy="116.7" r="3"/>
+                <circle cx="38.16" cy="62.07" r="3"/>
+              </g>
+              <g font-size="10" fill="#4F5A73" font-weight="600" text-anchor="middle">
+                <text x="84" y="16">疾病知识</text>
+                <text x="152" y="66">诊疗路径</text>
+                <text x="124" y="142">药物特点</text>
+                <text x="44" y="142">证据掌握</text>
+                <text x="16" y="66">沟通合规</text>
+              </g>
+            </svg>
+          </div>
+          <div class="radar-legend">
+            <div class="lg-item"><span class="lbl">疾病知识</span><span class="v me" style="color:#00C2D1">80</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">82</span></div>
+            <div class="lg-item"><span class="lbl">诊疗路径</span><span class="v me" style="color:#FF7A59">72</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">78</span></div>
+            <div class="lg-item"><span class="lbl">药物特点</span><span class="v me" style="color:#00C2D1">88</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">85</span></div>
+            <div class="lg-item"><span class="lbl">证据掌握</span><span class="v me" style="color:#00C2D1">82</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">76</span></div>
+            <div class="lg-item"><span class="lbl">沟通合规</span><span class="v me" style="color:#C9354D">68</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">88</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 每维评语 -->
+      <div class="recap-card">
+        <div class="card-head">
+          <span class="num-pill" style="background:#EDE3FE;color:#6D3DC8">评语</span>
+          <span class="t">每维度评价</span>
+        </div>
+        <div class="advice-list">
+          <div class="adv-item" style="border-left-color:#00C2D1">
+            <b>疾病知识 · 80 分</b>
+            病程进展和合并症识别清晰；ASCVD 心肌梗死陈旧灶处理思路正确，但对二级预防药物联用细节略有疏漏。
+          </div>
+          <div class="adv-item warn">
+            <b>诊疗路径 · 72 分（偏低）</b>
+            未在初次方案选择时主动评估磺脲剂量调整 / 停用；推荐先按 GLP-1 RA 起始 + 磺脲减半路径处理。
+          </div>
+          <div class="adv-item" style="border-left-color:#1FBA8C">
+            <b>药物特点 · 88 分（优秀）</b>
+            对诺和泰心血管获益机制掌握扎实，能准确引用 SUSTAIN-6 主要数据。
+          </div>
+          <div class="adv-item" style="border-left-color:#1FBA8C">
+            <b>证据掌握 · 82 分</b>
+            能引用关键 RCT 与亚组数据，但对中国真实世界数据来源记忆模糊。
+          </div>
+          <div class="adv-item warn" style="border-left-color:#C9354D">
+            <b>沟通合规 · 68 分（薄弱）</b>
+            提到"减重获益"时使用了非适应症话术；建议严格区分"主要适应症"与"获益数据"的表述边界。
+          </div>
+        </div>
+      </div>
+
+      <!-- 标准讨论思路对照 -->
+      <div class="recap-card">
+        <div class="card-head">
+          <span class="num-pill" style="background:#DCF6EC;color:#0E8E66">对照</span>
+          <span class="t">标准讨论思路</span>
+        </div>
+        <div class="compare-block">
+          <div class="cmp-row me">
+            <div class="who"><svg width="11" height="11" style="color:#C9354D"><use href="#i-tab-mine"/></svg> 我的方案</div>
+            优先选择 GLP-1 RA → 推荐诺和泰；维持二甲双胍 + 格列美脲；用 SUSTAIN-6 解释心血管获益。
+          </div>
+          <div class="cmp-row std">
+            <div class="who"><svg width="11" height="11"><use href="#i-check-c"/></svg> 标准方案</div>
+            优先 GLP-1 RA（诺和泰）+ <b>磺脲减半或停用</b> 以降低低血糖叠加 → 评估 SGLT-2i 联用以叠加心血管 + 肾脏获益 → 心梗陈旧史强调 LDL-C ≤ 1.8 目标。
+          </div>
+        </div>
+      </div>
+
+      <div class="row gap-8" style="margin-top:8px">
+        <button class="btn btn-outline" style="flex:1"><svg width="14" height="14"><use href="#i-replay"/></svg> 再来一次</button>
+        <button class="btn btn-grad" style="flex:1.4">查看完整对话回放 <svg width="14" height="14"><use href="#i-right"/></svg></button>
+      </div>
+    </div>
+  </section>
+  <span class="screen-label">屏 18 · 病例考核复盘（5 维雷达图 · 每维评语 · 标准方案对照）</span>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 19 · 排行榜（学习数据榜）
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-rank">
+    <div class="statusbar on-dark">
+      <span>11:02</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:42%;background:#fff"></i></span>
+      </div>
+    </div>
+
+    <div class="rank-hero">
+      <div class="app-header on-dark" style="padding-bottom:0">
+        <button class="icon-btn glass"><svg width="18" height="18"><use href="#i-back"/></svg></button>
+        <div class="title" style="color:#fff">排行榜</div>
+        <button class="icon-btn glass"><svg width="18" height="18"><use href="#i-help"/></svg></button>
+      </div>
+
+      <div class="rank-tabs">
+        <span class="tab active">学习数据</span>
+        <span class="tab">积分榜</span>
+      </div>
+
+      <div style="display:flex;justify-content:center;gap:6px;padding:0 16px 16px;position:relative;z-index:2">
+        <span style="padding:5px 12px;border-radius:var(--r-pill);font-size:11px;color:rgba(255,255,255,0.85);background:rgba(255,255,255,0.10)">练习时长</span>
+        <span style="padding:5px 12px;border-radius:var(--r-pill);font-size:11px;color:var(--c-brand);background:#fff;font-weight:700">考试得分</span>
+        <span style="padding:5px 12px;border-radius:var(--r-pill);font-size:11px;color:rgba(255,255,255,0.85);background:rgba(255,255,255,0.10)">演练得分</span>
+        <span style="margin-left:6px;padding:5px 12px;border-radius:var(--r-pill);font-size:11px;color:rgba(255,255,255,0.85);background:rgba(255,255,255,0.10)">华东大区</span>
+      </div>
+
+      <div class="rank-podium">
+        <div class="pod p2">
+          <div class="avatar s-48 bg-blue av">林</div>
+          <div class="badge s2">2</div>
+          <div class="nm">林婧</div>
+          <div class="pt">94 分</div>
+          <div class="col-bar">2</div>
+        </div>
+        <div class="pod p1">
+          <div class="crown"><svg><use href="#i-crown"/></svg></div>
+          <div class="avatar s-56 bg-coral av">赵</div>
+          <div class="badge">1</div>
+          <div class="nm">赵敏</div>
+          <div class="pt">96 分</div>
+          <div class="col-bar">1</div>
+        </div>
+        <div class="pod p3">
+          <div class="avatar s-48 bg-cyan av">吴</div>
+          <div class="badge s3">3</div>
+          <div class="nm">吴磊</div>
+          <div class="pt">92 分</div>
+          <div class="col-bar">3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rank-list scroll">
+      <div class="rank-row">
+        <div class="num">4</div>
+        <div class="avatar s-40 bg-purple">郑</div>
+        <div class="nm">郑思源<div class="sub">华东大区 · 上海</div></div>
+        <div class="trend up"><svg><use href="#i-trend-up"/></svg> 2</div>
+        <div class="pt">91<span class="u">分</span></div>
+      </div>
+      <div class="rank-row">
+        <div class="num">5</div>
+        <div class="avatar s-40 bg-green">王</div>
+        <div class="nm">王晓<div class="sub">华东大区 · 杭州</div></div>
+        <div class="trend down"><svg><use href="#i-trend-down"/></svg> 1</div>
+        <div class="pt">89<span class="u">分</span></div>
+      </div>
+      <div class="rank-row">
+        <div class="num">6</div>
+        <div class="avatar s-40 bg-gold">李</div>
+        <div class="nm">李子涵<div class="sub">华东大区 · 南京</div></div>
+        <div class="trend up"><svg><use href="#i-trend-up"/></svg> 4</div>
+        <div class="pt">88<span class="u">分</span></div>
+      </div>
+      <div class="rank-row">
+        <div class="num">7</div>
+        <div class="avatar s-40 bg-pink">陈</div>
+        <div class="nm">陈雨欣<div class="sub">华东大区 · 上海</div></div>
+        <div class="trend"></div>
+        <div class="pt">87<span class="u">分</span></div>
+      </div>
+
+      <!-- 当前用户 -->
+      <div class="rank-row me">
+        <div class="num">47</div>
+        <div class="avatar s-40 bg-coral">陈</div>
+        <div class="nm">陈晓雨（我）<div class="sub">华东大区 · 上海</div></div>
+        <div class="trend up"><svg><use href="#i-trend-up"/></svg> 6</div>
+        <div class="pt">84<span class="u">分</span></div>
+      </div>
+
+      <div class="rank-row">
+        <div class="num">48</div>
+        <div class="avatar s-40 bg-blue">刘</div>
+        <div class="nm">刘强<div class="sub">华东大区 · 苏州</div></div>
+        <div class="trend down"><svg><use href="#i-trend-down"/></svg> 2</div>
+        <div class="pt">83<span class="u">分</span></div>
+      </div>
+      <div class="rank-row">
+        <div class="num">49</div>
+        <div class="avatar s-40 bg-cyan">周</div>
+        <div class="nm">周博<div class="sub">华东大区 · 宁波</div></div>
+        <div class="trend up"><svg><use href="#i-trend-up"/></svg> 3</div>
+        <div class="pt">82<span class="u">分</span></div>
+      </div>
+    </div>
+
+    <nav class="tabbar v5">
+      <div class="tab"><svg class="ic"><use href="#i-tab-home2"/></svg><span>首页</span></div>
+      <div class="tab"><svg class="ic"><use href="#i-tab-ask"/></svg><span>AI 问答</span></div>
+      <div class="tab"><svg class="ic"><use href="#i-tab-exam"/></svg><span>考试中心</span></div>
+      <div class="tab active"><svg class="ic"><use href="#i-tab-rank"/></svg><span>排行榜</span></div>
+      <div class="tab"><svg class="ic"><use href="#i-tab-mine"/></svg><span>我的</span></div>
+    </nav>
+  </section>
+  <span class="screen-label">屏 19 · 排行榜（学习数据榜 · 个人 / 区域 · Top3 领奖台 · 当前名次）</span>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 20 · 积分榜 + 勋章等级
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-rank">
+    <div class="statusbar on-dark">
+      <span>11:03</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:42%;background:#fff"></i></span>
+      </div>
+    </div>
+
+    <div class="rank-hero" style="padding-bottom:14px">
+      <div class="app-header on-dark" style="padding-bottom:0">
+        <button class="icon-btn glass"><svg width="18" height="18"><use href="#i-back"/></svg></button>
+        <div class="title" style="color:#fff">排行榜</div>
+        <button class="icon-btn glass"><svg width="18" height="18"><use href="#i-help"/></svg></button>
+      </div>
+
+      <div class="rank-tabs">
+        <span class="tab">学习数据</span>
+        <span class="tab active">积分榜</span>
+      </div>
+
+      <!-- 我的积分卡 -->
+      <div class="my-score-card">
+        <div class="row gap-12">
+          <div class="medal-big">
+            <span class="ring"></span>
+            <svg width="32" height="32"><use href="#i-medal"/></svg>
+          </div>
+          <div class="flex-1">
+            <div class="row between">
+              <div class="lv-nm">铂金代表 · Lv 4</div>
+              <div class="lv-pt"><b>2840</b> 积分</div>
+            </div>
+            <div class="text-3 f-11 mt-4" style="color:rgba(255,255,255,0.78)">距钻石代表还差 <b style="color:#FFE69E">660</b> 积分</div>
+            <div class="lv-bar mt-8"><i style="width:81%"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 勋章等级 6 阶 -->
+      <div class="medal-stairs">
+        <div class="ms-item done"><div class="ms-ic">🥉</div><div class="ms-lbl">青铜</div></div>
+        <div class="ms-item done"><div class="ms-ic">🥈</div><div class="ms-lbl">白银</div></div>
+        <div class="ms-item done"><div class="ms-ic">🥇</div><div class="ms-lbl">黄金</div></div>
+        <div class="ms-item active"><div class="ms-ic">⭐</div><div class="ms-lbl">铂金<span>当前</span></div></div>
+        <div class="ms-item"><div class="ms-ic">💎</div><div class="ms-lbl">钻石</div></div>
+        <div class="ms-item"><div class="ms-ic">👑</div><div class="ms-lbl">王者</div></div>
+      </div>
+    </div>
+
+    <div class="rank-list scroll" style="padding-top:12px">
+      <!-- Top 名次 -->
+      <div class="rank-row">
+        <div class="num" style="color:#FFB454;font-size:18px">1</div>
+        <div class="avatar s-40 bg-gold">赵</div>
+        <div class="nm">赵敏 <span style="font-size:11px;color:#C77D00;font-weight:700">👑 王者 Lv6</span><div class="sub">华东大区 · 上海</div></div>
+        <div class="pt">5,820<span class="u">分</span></div>
+      </div>
+      <div class="rank-row">
+        <div class="num" style="color:#8A9AB7;font-size:18px">2</div>
+        <div class="avatar s-40 bg-purple">林</div>
+        <div class="nm">林婧 <span style="font-size:11px;color:#6D3DC8;font-weight:700">💎 钻石 Lv5</span><div class="sub">华东大区 · 杭州</div></div>
+        <div class="pt">4,680<span class="u">分</span></div>
+      </div>
+      <div class="rank-row">
+        <div class="num" style="color:#B57A4A;font-size:18px">3</div>
+        <div class="avatar s-40 bg-cyan">吴</div>
+        <div class="nm">吴磊 <span style="font-size:11px;color:#6D3DC8;font-weight:700">💎 钻石 Lv5</span><div class="sub">华东大区 · 南京</div></div>
+        <div class="pt">3,920<span class="u">分</span></div>
+      </div>
+      <div class="rank-row">
+        <div class="num">4</div>
+        <div class="avatar s-40 bg-blue">郑</div>
+        <div class="nm">郑思源 <span style="font-size:11px;color:#C77D00;font-weight:700">⭐ 铂金 Lv4</span><div class="sub">华东大区 · 上海</div></div>
+        <div class="pt">3,250<span class="u">分</span></div>
+      </div>
+      <div class="rank-row me">
+        <div class="num">12</div>
+        <div class="avatar s-40 bg-coral">陈</div>
+        <div class="nm">陈晓雨（我） <span style="font-size:11px;color:#C77D00;font-weight:700">⭐ 铂金 Lv4</span><div class="sub">华东大区 · 上海</div></div>
+        <div class="pt">2,840<span class="u">分</span></div>
+      </div>
+      <div class="rank-row">
+        <div class="num">13</div>
+        <div class="avatar s-40 bg-green">李</div>
+        <div class="nm">李子涵 <span style="font-size:11px;color:#6D3DC8;font-weight:700">⭐ 铂金 Lv4</span><div class="sub">华东大区 · 南京</div></div>
+        <div class="pt">2,720<span class="u">分</span></div>
+      </div>
+    </div>
+
+    <nav class="tabbar v5">
+      <div class="tab"><svg class="ic"><use href="#i-tab-home2"/></svg><span>首页</span></div>
+      <div class="tab"><svg class="ic"><use href="#i-tab-ask"/></svg><span>AI 问答</span></div>
+      <div class="tab"><svg class="ic"><use href="#i-tab-exam"/></svg><span>考试中心</span></div>
+      <div class="tab active"><svg class="ic"><use href="#i-tab-rank"/></svg><span>排行榜</span></div>
+      <div class="tab"><svg class="ic"><use href="#i-tab-mine"/></svg><span>我的</span></div>
+    </nav>
+  </section>
+  <span class="screen-label">屏 20 · 积分榜（积分卡 · 勋章 6 阶 · 等级 chip）</span>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 21 · 我的（个人中心 v2 · 双雷达图 + 趋势折线）
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-mine-v2">
+    <div class="statusbar on-dark">
+      <span>10:24</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:62%;background:#fff"></i></span>
+      </div>
+    </div>
+
+    <div class="mine-v2-hero">
+      <div class="nav-row">
+        <div class="title" style="color:#fff">我的</div>
+        <div class="row gap-4">
+          <button class="icon-btn glass"><svg width="18" height="18"><use href="#i-edit"/></svg></button>
+          <button class="icon-btn glass"><svg width="18" height="18"><use href="#i-settings"/></svg></button>
+        </div>
+      </div>
+
+      <div class="profile-block">
+        <div class="avatar s-64 bg-coral av">陈</div>
+        <div class="info">
+          <div class="nm">陈晓雨 <svg><use href="#i-edit"/></svg></div>
+          <div class="tags">
+            <span>内分泌区域代表</span>
+            <span>华东大区·上海</span>
+            <span>工号 NN0245</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="achievement-row">
+        <div class="cur-medal">
+          <span class="ring"></span>
+          <svg><use href="#i-medal"/></svg>
+        </div>
+        <div class="lv-info">
+          <div class="lv-name">铂金代表 · Lv 4</div>
+          <div class="lv-sub">2840 / 3500 积分 · 距钻石还差 <b style="color:#FFE69E">660</b></div>
+          <div class="lv-bar"><i style="width:81%"></i></div>
+        </div>
+        <button class="open"><svg width="14" height="14"><use href="#i-right"/></svg></button>
+      </div>
+    </div>
+
+    <div class="mine-v2-body">
+      <!-- 快捷入口 -->
+      <div class="mine-quick-v2">
+        <div class="item"><div class="ic-wrap b1"><svg><use href="#i-bookmark-fill"/></svg></div><div class="lbl">收藏夹</div></div>
+        <div class="item"><div class="ic-wrap b2"><svg><use href="#i-error"/></svg></div><div class="lbl">错题集</div></div>
+        <div class="item"><div class="ic-wrap b3"><svg><use href="#i-history"/></svg></div><div class="lbl">学习记录</div></div>
+        <div class="item"><div class="ic-wrap b4"><svg><use href="#i-award"/></svg></div><div class="lbl">勋章墙</div></div>
+      </div>
+
+      <!-- 学习数据卡（趋势折线）-->
+      <div class="data-card">
+        <div class="dc-head">
+          <div class="t"><svg><use href="#i-chart"/></svg> 学习数据</div>
+          <div class="seg">
+            <span class="s active">本周</span>
+            <span class="s">本月</span>
+          </div>
+        </div>
+
+        <div class="data-stat-row">
+          <div class="item">
+            <div class="v">12<span class="u">次</span></div>
+            <div class="l">练习次数</div>
+            <span class="delta up"><svg><use href="#i-trend-up"/></svg> +3</span>
+          </div>
+          <div class="item">
+            <div class="v">3.6<span class="u">h</span></div>
+            <div class="l">练习时长</div>
+            <span class="delta up"><svg><use href="#i-trend-up"/></svg> +0.8h</span>
+          </div>
+          <div class="item">
+            <div class="v">84<span class="u">分</span></div>
+            <div class="l">平均考试</div>
+            <span class="delta up"><svg><use href="#i-trend-up"/></svg> +6</span>
+          </div>
+        </div>
+
+        <!-- 趋势折线（练习 vs 考试 7 周对比） -->
+        <div class="trend-chart">
+          <div class="tc-head">
+            <span style="font-weight:600;color:var(--c-text-2)">近 7 周趋势</span>
+            <span class="row gap-12">
+              <span class="lab"><span class="sw me"></span>练习得分</span>
+              <span class="lab"><span class="sw exam"></span>考试得分</span>
+            </span>
+          </div>
+          <svg class="tc-svg" viewBox="0 0 320 120" preserveAspectRatio="none">
+            <!-- 网格线 -->
+            <g stroke="#E5EAF2" stroke-width="0.6" stroke-dasharray="2 3">
+              <line x1="10" y1="20" x2="310" y2="20"/>
+              <line x1="10" y1="50" x2="310" y2="50"/>
+              <line x1="10" y1="80" x2="310" y2="80"/>
+            </g>
+            <!-- 数据点 X：每 50 px 一周，7 周 -->
+            <!-- 练习得分: 68 72 75 70 78 82 84 -> y = 100 - score*0.8 -->
+            <!-- y: 45.6, 42.4, 40, 44, 37.6, 34.4, 32.8 -->
+            <!-- 区域填充·练习 -->
+            <path d="M 20,46 L 70,42 L 120,40 L 170,44 L 220,38 L 270,34 L 310,33 L 310,110 L 20,110 Z"
+                  fill="rgba(0,70,200,0.08)"/>
+            <!-- 练习折线 -->
+            <polyline points="20,46 70,42 120,40 170,44 220,38 270,34 310,33"
+                      fill="none" stroke="#0046C8" stroke-width="2.2"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- 考试得分: 76 - - 82 - 88 92 -> 间断显示 -->
+            <polyline points="20,40 170,34 270,30 310,27"
+                      fill="none" stroke="#FF7A59" stroke-width="2.2"
+                      stroke-linecap="round" stroke-linejoin="round"
+                      stroke-dasharray="0"/>
+            <!-- 数据点 · 练习 -->
+            <g fill="#fff" stroke="#0046C8" stroke-width="1.8">
+              <circle cx="20" cy="46" r="3"/>
+              <circle cx="70" cy="42" r="3"/>
+              <circle cx="120" cy="40" r="3"/>
+              <circle cx="170" cy="44" r="3"/>
+              <circle cx="220" cy="38" r="3"/>
+              <circle cx="270" cy="34" r="3"/>
+              <circle cx="310" cy="33" r="4" fill="#0046C8"/>
+            </g>
+            <!-- 数据点 · 考试 -->
+            <g fill="#fff" stroke="#FF7A59" stroke-width="1.8">
+              <circle cx="20" cy="40" r="3"/>
+              <circle cx="170" cy="34" r="3"/>
+              <circle cx="270" cy="30" r="3"/>
+              <circle cx="310" cy="27" r="4" fill="#FF7A59"/>
+            </g>
+            <!-- 最新点 tooltip -->
+            <g>
+              <rect x="270" y="6" width="44" height="18" rx="4" fill="#0046C8"/>
+              <text x="292" y="18" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">84 分</text>
+            </g>
+          </svg>
+          <div class="tc-xaxis">
+            <span>W18</span><span>W19</span><span>W20</span><span>W21</span><span>W22</span><span>W23</span><span style="color:var(--c-brand);font-weight:700">W24</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 异议处理能力雷达图 -->
+      <div class="ability-card">
+        <div class="ab-head">
+          <div class="ic obj"><svg><use href="#i-stethoscope"/></svg></div>
+          <div class="t">异议处理能力</div>
+          <span class="pct-cmp">↑ 高于团队均值 6%</span>
+        </div>
+        <div class="ab-body">
+          <div class="radar-block" style="gap:8px">
+            <div class="radar-wrap" style="width:148px;height:148px">
+              <svg viewBox="0 0 148 148">
+                <!-- 同心 4 -->
+                <g stroke="#E5EAF2" fill="none" stroke-width="1">
+                  <polygon points="74,24 124,74 74,124 24,74"/>
+                  <polygon points="74,36 112,74 74,112 36,74"/>
+                  <polygon points="74,48 100,74 74,100 48,74"/>
+                  <polygon points="74,60 88,74 74,88 60,74"/>
+                </g>
+                <g stroke="#E5EAF2" stroke-width="1">
+                  <line x1="74" y1="24" x2="74" y2="124"/>
+                  <line x1="24" y1="74" x2="124" y2="74"/>
+                </g>
+                <!-- 团队均值（虚线灰）：专业76 / 合规80 / 流畅75 / 共情81 -->
+                <polygon points="74,36 114,74 74,112 36.4,74"
+                         fill="rgba(199,209,229,0.30)"
+                         stroke="#C7D1E5" stroke-width="1.4"
+                         stroke-dasharray="3 3"/>
+                <!-- 我的（实线红橙）：专业85 / 合规92 / 流畅78 / 共情72 -->
+                <polygon points="74,31.5 119,74 74,113.5 41,74"
+                         fill="rgba(255,122,89,0.18)"
+                         stroke="#FF7A59" stroke-width="2"/>
+                <g fill="#FF7A59">
+                  <circle cx="74" cy="31.5" r="2.6"/>
+                  <circle cx="119" cy="74" r="2.6"/>
+                  <circle cx="74" cy="113.5" r="2.6"/>
+                  <circle cx="41" cy="74" r="2.6"/>
+                </g>
+                <g font-size="9" fill="#4F5A73" font-weight="600" text-anchor="middle">
+                  <text x="74" y="18">专业度</text>
+                  <text x="138" y="77">合规性</text>
+                  <text x="74" y="140">流畅度</text>
+                  <text x="12" y="77">共情力</text>
+                </g>
+              </svg>
+            </div>
+            <div class="radar-legend" style="flex:1">
+              <div class="lg-item"><span class="lbl">专业度</span><span class="v me" style="color:#FF7A59">85</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">76</span></div>
+              <div class="lg-item"><span class="lbl">合规性</span><span class="v me" style="color:#FF7A59">92</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">80</span></div>
+              <div class="lg-item"><span class="lbl">流畅度</span><span class="v me" style="color:#FF7A59">78</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">75</span></div>
+              <div class="lg-item"><span class="lbl">共情力</span><span class="v me" style="color:#C9354D">72</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">81</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="weakness-block">
+          <div class="wb-item warn">
+            <div class="ic-mini"><svg><use href="#i-info"/></svg></div>
+            <div><b>薄弱点：共情力 72 分</b><br><span>低于团队均值 9 分，主要发生在医生表达犹豫时的情绪回应缺失。</span></div>
+          </div>
+          <div class="wb-item tip">
+            <div class="ic-mini"><svg><use href="#i-lightbulb"/></svg></div>
+            <div><b>提升建议</b><br><span>推荐场景：「价格异议·主任态度抵触」；推荐资源：共情话术 5 句式·6 min 视频。</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 病例讨论能力雷达图 -->
+      <div class="ability-card">
+        <div class="ab-head">
+          <div class="ic case"><svg><use href="#i-book"/></svg></div>
+          <div class="t">病例讨论能力</div>
+          <span class="pct-cmp down">↓ 低于团队均值 4%</span>
+        </div>
+        <div class="ab-body">
+          <div class="radar-block" style="gap:8px">
+            <div class="radar-wrap" style="width:148px;height:148px">
+              <svg viewBox="0 0 148 148">
+                <!-- 五边形同心 -->
+                <g stroke="#E5EAF2" fill="none" stroke-width="1">
+                  <!-- 5 顶点：顶/右上/右下/左下/左上，r 依次 50/37.5/25/12.5 -->
+                  <polygon points="74,24 121.6,58.6 103.4,114.4 44.6,114.4 26.4,58.6"/>
+                  <polygon points="74,36.5 109.7,62.5 96.05,104.3 51.95,104.3 38.3,62.5"/>
+                  <polygon points="74,49 97.8,66.3 88.7,94.1 59.3,94.1 50.2,66.3"/>
+                  <polygon points="74,61.5 85.9,70.2 81.35,84 66.65,84 62.1,70.2"/>
+                </g>
+                <g stroke="#E5EAF2" stroke-width="1">
+                  <line x1="74" y1="24" x2="74" y2="124"/>
+                  <line x1="74" y1="74" x2="121.6" y2="58.6"/>
+                  <line x1="74" y1="74" x2="103.4" y2="114.4"/>
+                  <line x1="74" y1="74" x2="44.6" y2="114.4"/>
+                  <line x1="74" y1="74" x2="26.4" y2="58.6"/>
+                </g>
+                <!-- 团队均值（虚线）：疾病82 / 路径78 / 药物85 / 证据76 / 合规88 -->
+                <!-- 半径 = score% * 50 -->
+                <polygon points="74,33 113.7,61.4 99.4,105.9 49.4,108 30.6,55.8"
+                         fill="rgba(199,209,229,0.30)"
+                         stroke="#C7D1E5" stroke-width="1.4"
+                         stroke-dasharray="3 3"/>
+                <!-- 我的（实线青）：疾病78 / 路径70 / 药物88 / 证据82 / 合规72 -->
+                <polygon points="74,35 111.1,62.7 100.3,103 47.9,105 35.4,60.7"
+                         fill="rgba(0,194,209,0.22)"
+                         stroke="#00C2D1" stroke-width="2"/>
+                <g fill="#00C2D1">
+                  <circle cx="74" cy="35" r="2.6"/>
+                  <circle cx="111.1" cy="62.7" r="2.6"/>
+                  <circle cx="100.3" cy="103" r="2.6"/>
+                  <circle cx="47.9" cy="105" r="2.6"/>
+                  <circle cx="35.4" cy="60.7" r="2.6"/>
+                </g>
+                <g font-size="9" fill="#4F5A73" font-weight="600" text-anchor="middle">
+                  <text x="74" y="16">疾病知识</text>
+                  <text x="132" y="58">诊疗路径</text>
+                  <text x="112" y="126">药物特点</text>
+                  <text x="36" y="126">证据掌握</text>
+                  <text x="16" y="58">沟通合规</text>
+                </g>
+              </svg>
+            </div>
+            <div class="radar-legend" style="flex:1">
+              <div class="lg-item"><span class="lbl">疾病知识</span><span class="v me" style="color:#00C2D1">78</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">82</span></div>
+              <div class="lg-item"><span class="lbl">诊疗路径</span><span class="v me" style="color:#C9354D">70</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">78</span></div>
+              <div class="lg-item"><span class="lbl">药物特点</span><span class="v me" style="color:#00C2D1">88</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">85</span></div>
+              <div class="lg-item"><span class="lbl">证据掌握</span><span class="v me" style="color:#00C2D1">82</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">76</span></div>
+              <div class="lg-item"><span class="lbl">沟通合规</span><span class="v me" style="color:#C9354D">72</span><span style="color:#C7D1E5;font-size:10px"> / </span><span class="v team">88</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="weakness-block">
+          <div class="wb-item warn">
+            <div class="ic-mini"><svg><use href="#i-info"/></svg></div>
+            <div><b>薄弱点：诊疗路径 70 / 沟通合规 72</b><br><span>在 ASCVD 合并 CKD 等复杂路径上易出错；沟通合规需加强医保/适应症边界把握。</span></div>
+          </div>
+          <div class="wb-item tip">
+            <div class="ic-mini"><svg><use href="#i-lightbulb"/></svg></div>
+            <div><b>提升建议</b><br><span>推荐病例：「T2DM 合并 CKD 3 期」「老年 ASCVD」共 4 个病例；可与「合规话术速记」资料配套学习。</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="height:8px"></div>
+    </div>
+
+    <nav class="tabbar v5">
+      <div class="tab"><svg class="ic"><use href="#i-tab-home2"/></svg><span>首页</span></div>
+      <div class="tab"><svg class="ic"><use href="#i-tab-ask"/></svg><span>AI 问答</span></div>
+      <div class="tab"><svg class="ic"><use href="#i-tab-exam"/></svg><span>考试中心</span></div>
+      <div class="tab"><svg class="ic"><use href="#i-tab-rank"/></svg><span>排行榜</span></div>
+      <div class="tab active"><svg class="ic"><use href="#i-tab-mine"/></svg><span>我的</span></div>
+    </nav>
+  </section>
+  <span class="screen-label">屏 21 · 个人中心（成就墙 · 趋势折线 · 异议雷达 · 病例雷达 · 薄弱点）</span>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 22 · 收藏夹（多 Tab）
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-faq">
+    <div class="statusbar">
+      <span>11:05</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:40%;background:currentColor"></i></span>
+      </div>
+    </div>
+
+    <div class="app-header">
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-back"/></svg></button>
+      <div class="title">我的收藏</div>
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-edit"/></svg></button>
+    </div>
+
+    <div class="cate-tabs">
+      <span class="tab active">全部 · 38</span>
+      <span class="tab">产品 QA · 21</span>
+      <span class="tab">问答记录 · 12</span>
+      <span class="tab">场景 · 3</span>
+      <span class="tab">病例 · 2</span>
+    </div>
+
+    <div class="scroll" style="padding:0 16px 16px">
+      <!-- QA 收藏 -->
+      <div class="fav-card">
+        <div class="fav-typ qa"><svg width="11" height="11"><use href="#i-question"/></svg> 产品 QA</div>
+        <div class="fav-q">SUSTAIN-6 研究中诺和泰的 MACE 风险降低数据？心血管获益机制？</div>
+        <div class="fav-foot">
+          <div class="tag-row">
+            <span class="chip coral">疗效</span>
+            <span class="chip gray">心血管获益</span>
+          </div>
+          <span class="text-3 f-11">3 天前收藏</span>
+        </div>
+      </div>
+
+      <!-- AI 问答记录 -->
+      <div class="fav-card">
+        <div class="fav-typ ai"><svg width="11" height="11"><use href="#i-sparkle"/></svg> AI 问答</div>
+        <div class="fav-q">医生说诺和泰每周一次注射比口服更麻烦，依从性反而下降，怎么回应？</div>
+        <div class="fav-foot">
+          <div class="text-3 f-11"><svg width="11" height="11" style="vertical-align:middle"><use href="#i-link"/></svg> 3 条来源 · SUSTAIN / 真实世界 / 患者教育</div>
+          <span class="text-3 f-11">昨天</span>
+        </div>
+      </div>
+
+      <!-- 场景 -->
+      <div class="fav-card">
+        <div class="fav-typ scn"><svg width="11" height="11"><use href="#i-stethoscope"/></svg> 异议场景</div>
+        <div class="fav-q">王伟主任 · 心血管获益异议（KOL · 4 阶段）</div>
+        <div class="fav-foot">
+          <div class="text-3 f-11">最佳成绩 <b class="text-brand">82</b> 分 · 完成 2 次</div>
+          <button class="btn btn-ghost btn-sm">再练 <svg width="10" height="10"><use href="#i-right"/></svg></button>
+        </div>
+      </div>
+
+      <!-- QA 收藏 -->
+      <div class="fav-card">
+        <div class="fav-typ qa"><svg width="11" height="11"><use href="#i-question"/></svg> 产品 QA</div>
+        <div class="fav-q">患者用药 4 周仍有恶心、轻度呕吐，如何分阶段缓解 GI 不良反应？</div>
+        <div class="fav-foot">
+          <div class="tag-row">
+            <span class="chip coral">安全性</span>
+            <span class="chip gray">GI 不良反应</span>
+          </div>
+          <span class="text-3 f-11">1 周前</span>
+        </div>
+      </div>
+
+      <!-- 病例 -->
+      <div class="fav-card">
+        <div class="fav-typ case"><svg width="11" height="11"><use href="#i-book"/></svg> 病例</div>
+        <div class="fav-q">病例 #3 · T2DM 合并 ASCVD 老年男性</div>
+        <div class="fav-foot">
+          <div class="text-3 f-11">本次 78 分 · 沟通合规偏弱</div>
+          <span class="text-3 f-11">3 天前</span>
+        </div>
+      </div>
+
+      <!-- AI 问答 -->
+      <div class="fav-card">
+        <div class="fav-typ ai"><svg width="11" height="11"><use href="#i-sparkle"/></svg> AI 问答</div>
+        <div class="fav-q">朝阳医院内分泌王伟主任近期学术关注点？</div>
+        <div class="fav-foot">
+          <div class="text-3 f-11"><svg width="11" height="11" style="vertical-align:middle"><use href="#i-user-md"/></svg> HCP360 · 心血管获益 / CKD</div>
+          <span class="text-3 f-11">3 天前</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <span class="screen-label">屏 22 · 收藏夹（QA / AI 问答 / 场景 / 病例 多 Tab）</span>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════
+       屏 23 · 错题集
+       ════════════════════════════════════════════════════════════ -->
+  <section class="screen-wrap">
+  <section class="screen s-faq">
+    <div class="statusbar">
+      <span>11:06</span>
+      <div class="statusbar-icons">
+        <span class="bar-signal"><i></i><i></i><i></i><i></i></span>
+        <span>5G</span>
+        <span class="bar-battery"><i style="width:38%;background:currentColor"></i></span>
+      </div>
+    </div>
+
+    <div class="app-header">
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-back"/></svg></button>
+      <div class="title">错题集</div>
+      <button class="icon-btn"><svg width="20" height="20"><use href="#i-filter"/></svg></button>
+    </div>
+
+    <!-- 错题统计条 -->
+    <div class="wrong-stat">
+      <div class="ws-item">
+        <div class="v">23</div>
+        <div class="l">总错题</div>
+      </div>
+      <div class="ws-sep"></div>
+      <div class="ws-item">
+        <div class="v" style="color:#C9354D">8</div>
+        <div class="l">未掌握</div>
+      </div>
+      <div class="ws-sep"></div>
+      <div class="ws-item">
+        <div class="v" style="color:#0E8E66">15</div>
+        <div class="l">已重做正确</div>
+      </div>
+      <div class="ws-act">
+        <button class="btn btn-coral btn-sm"><svg width="11" height="11"><use href="#i-replay"/></svg> 重做未掌握</button>
+      </div>
+    </div>
+
+    <div class="cate-tabs">
+      <span class="tab active">全部</span>
+      <span class="tab">未掌握 · 8</span>
+      <span class="tab">疗效</span>
+      <span class="tab">安全性</span>
+      <span class="tab">用药方案</span>
+    </div>
+
+    <div class="scroll" style="padding:0 16px 16px">
+      <div class="wrong-card">
+        <div class="w-head">
+          <span class="n">来自 Q1 季度考试</span>
+          <span class="typ">单选 · 错</span>
+          <span style="margin-left:auto;font-size:11px;color:#C9354D;font-weight:700">未掌握</span>
+        </div>
+        <div class="w-q">SUSTAIN-6 研究中诺和泰治疗组 3 点 MACE 风险降低多少？</div>
+        <div class="w-opt wrong">
+          <div class="ix">A</div>
+          <div class="x" style="flex:1">15%（HR 0.85）</div>
+          <span class="lbl">我的</span>
+        </div>
+        <div class="w-opt correct">
+          <div class="ix">B</div>
+          <div class="x" style="flex:1">26%（HR 0.74）</div>
+          <span class="lbl">正确</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding-top:8px;border-top:1px dashed var(--c-line);margin-top:6px">
+          <div class="text-3 f-11">已练习 1 次 · 上次仍错</div>
+          <button class="btn btn-ghost btn-sm">立即重做 <svg width="10" height="10"><use href="#i-right"/></svg></button>
+        </div>
+      </div>
+
+      <div class="wrong-card">
+        <div class="w-head">
+          <span class="n">来自 Q2 模考</span>
+          <span class="typ">多选 · 错</span>
+          <span style="margin-left:auto;font-size:11px;color:#0E8E66;font-weight:700">已重做正确</span>
+        </div>
+        <div class="w-q">下列哪些是诺和泰常见的胃肠道不良反应处理建议？</div>
+        <div class="w-opt correct">
+          <div class="ix">A</div>
+          <div class="x" style="flex:1">起始小剂量逐步递增</div>
+          <span class="lbl">正确</span>
+        </div>
+        <div class="w-opt correct">
+          <div class="ix">C</div>
+          <div class="x" style="flex:1">饮食小份多次，避免高脂</div>
+          <span class="lbl">正确</span>
+        </div>
+      </div>
+
+      <div class="wrong-card">
+        <div class="w-head">
+          <span class="n">来自材料配套答题</span>
+          <span class="typ">主观 · 偏低</span>
+          <span style="margin-left:auto;font-size:11px;color:#C9354D;font-weight:700">未掌握</span>
+        </div>
+        <div class="w-q">请阐述合并 CKD 3 期的 T2DM 患者使用 GLP-1 RA 的注意要点。</div>
+        <div style="background:#FFF1F1;border-left:3px solid #C9354D;padding:10px 12px;border-radius:8px;font-size:12px;line-height:1.55;color:var(--c-text);margin-top:4px">
+          <div style="font-size:11px;font-weight:700;color:#C9354D;margin-bottom:4px">我的回答 · 评分 58 / 100</div>
+          只提到了起始剂量调整，未涉及合并药物管理、低血糖叠加风险等关键要点……
+        </div>
+        <div style="background:#F0FAF5;border-left:3px solid #0E8E66;padding:10px 12px;border-radius:8px;font-size:12px;line-height:1.55;color:var(--c-text);margin-top:6px">
+          <div style="font-size:11px;font-weight:700;color:#0E8E66;margin-bottom:4px">标准答法</div>
+          eGFR ≥ 30 无需调整剂量；与磺脲联用应剂量减半 / 停用；监测肾功能与脱水；患教注意呕吐 / 腹泻时及时补液避免 AKI……
+        </div>
+      </div>
+    </div>
+  </section>
+  <span class="screen-label">屏 23 · 错题集（错题统计 · 分类筛选 · 重做入口 · 主客观区分）</span>
+  </section>
+
+</main>
+
+</body>
+</html>
